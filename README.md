@@ -1,2 +1,41 @@
 # portfolio
-This Repo is where all my old projects get moved to. Every folder in this repo was formerly its own repository before being flattened and moved here.
+This repo is where all my old projects get moved to. Every folder in this repo was formerly its own repository before being flattened and moved here.
+
+### learning-flask
+This folder contains files from a previous attempt at creating a flask app that I hosted on Heroku. This is no longer hosted.
+
+- [X] Built
+- [ ] Hosted
+
+### projectmgt
+This folder contains files from a school project where I intended to build and host my design for a PM application.
+
+- [ ] Built
+- [ ] Hosted
+
+### python-scripts
+A folder for my Python scripts. This was probably the most fun to experiment with.
+
+* Script: pythonutils.py
+  - Showcases the use of some Shell Utilities
+
+* Script: netdata.py
+  - HTTP request for web data
+
+* Script: jsondata.py
+  - Grabbing, formatting and printing *JSON* data from an online resource [The USGS Earthquake real-time feeds](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php).
+
+* Script: htmlparser.py
+  - Custom HTML parser
+
+* Script: xmlparsing.py
+  - Load and parse XML in memory
+
+### Java-Design-Patterns
+A collection of my explorations in Design Patterns using Java
+
+- [X] Abstract Factory
+- [X] Decorator
+- [X] Template
+- [X] Observer
+- [ ] More to come
