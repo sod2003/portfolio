@@ -39,3 +39,12 @@ A collection of my explorations in Design Patterns using Java
 - [X] Template
 - [X] Observer
 - [ ] More to come
+
+### js-scripts
+A folder for my JavaScript files.
+
+* Clock
+  - A SVG Clock, made dynamic with JavaScript.
+
+* Typing Speed Test
+  - An interactive program for a Typing Speed Test. Runs a timer until the participant enters the correct text prompt. Continuously checks for spelling errors, giving color-coded feedback.

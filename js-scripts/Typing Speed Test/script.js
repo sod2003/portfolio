@@ -54,7 +54,7 @@ function start() {
   console.log(textEnteredLength);
 }
 
-// Reset everything:
+// Resets timer:
 function reset() {
   clearInterval(interval);
   interval = null;
