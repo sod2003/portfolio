@@ -7,12 +7,6 @@ This folder contains files from a previous attempt at creating a flask app that 
 - [X] Built
 - [ ] Hosted
 
-### projectmgt
-This folder contains files from a school project where I intended to build and host my design for a PM application.
-
-- [ ] Built
-- [ ] Hosted
-
 ### python-scripts
 A folder for my Python scripts. This was probably the most fun to experiment with.
 
