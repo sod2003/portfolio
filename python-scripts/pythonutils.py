@@ -46,7 +46,7 @@ def main():
 
     # Archive the two new files into zip file utilizing a call to the CLI
     os.system("python -m zipfile -c testfile.zip testfile.txt testcopy.txt")
-    # Alternatively, I could archive the entire file by importing make_archive from shutil
+    # Alternatively, I could archive the entire folder by importing make_archive from shutil
     # and call shutil.make_archive("archive", "zip", <base-dir>) within my python script
     # where the <base-dir> is the folder I want to archive
 
