@@ -8,7 +8,7 @@ This folder contains files from a previous attempt at creating a flask app that 
 - [ ] Hosted
 
 ### python-algorithms
-A folder for experimenting with implementing algorithms in python.
+A folder for experimenting with data structures and algorithms in Python.
 
 ### python-scripts
 A folder for my Python scripts. This was probably the most fun to experiment with.
