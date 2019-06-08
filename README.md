@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 This repo is where all my old projects get moved to. Every folder in this repo was formerly its own repository before being flattened and moved here.
 
 ### learning-flask
@@ -7,26 +7,25 @@ This folder contains files from a previous attempt at creating a flask app that 
 - [X] Built
 - [ ] Hosted
 
-### python-algorithms
+### Python
+
+- __Algorithms__
 A folder for experimenting with data structures and algorithms in Python.
 
-### python-scripts
+- __Design Patterns__
+A folder for experimenting with design patterns in Python
+
+- __Scripts__
 A folder for my Python scripts. This was probably the most fun to experiment with.
+  * Script: pythonutils.py - Showcases the use of some Shell Utilities
 
-* Script: pythonutils.py
-  - Showcases the use of some Shell Utilities
+  * Script: netdata.py - HTTP request for web data
 
-* Script: netdata.py
-  - HTTP request for web data
+  * Script: jsondata.py - Grabbing, formatting and printing *JSON* data from an online resource [The USGS Earthquake real-time feeds](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php).
 
-* Script: jsondata.py
-  - Grabbing, formatting and printing *JSON* data from an online resource [The USGS Earthquake real-time feeds](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php).
+  * Script: htmlparser.py - Custom HTML parser
 
-* Script: htmlparser.py
-  - Custom HTML parser
-
-* Script: xmlparsing.py
-  - Load and parse XML in memory
+  * Script: xmlparsing.py - Load and parse XML in memory
 
 ### Java-Design-Patterns
 A collection of my explorations in Design Patterns using Java
@@ -40,8 +39,6 @@ A collection of my explorations in Design Patterns using Java
 ### js-scripts
 A folder for my JavaScript files.
 
-* Clock
-  - A SVG Clock, made dynamic with JavaScript.
+* Clock - A SVG Clock, made dynamic with JavaScript.
 
-* Typing Speed Test
-  - An interactive program for a Typing Speed Test. Runs a timer until the participant enters the correct text prompt. Continuously checks for spelling errors, giving color-coded feedback.
+* Typing Speed Test - An interactive program for a Typing Speed Test. Runs a timer until the participant enters the correct text prompt. Continuously checks for spelling errors, giving color-coded feedback.
