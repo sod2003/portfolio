@@ -9,13 +9,18 @@ This folder contains files from a previous attempt at creating a flask app that 
 
 ### Python
 
-- __Algorithms__
+* __Algorithms__
 A folder for experimenting with data structures and algorithms in Python.
 
-- __Design Patterns__
+* __Design Patterns__
 A folder for experimenting with design patterns in Python
+  * Creational
 
-- __Scripts__
+  * Structural
+
+  * Behavioral
+
+* __Scripts__
 A folder for my Python scripts. This was probably the most fun to experiment with.
   * Script: pythonutils.py - Showcases the use of some Shell Utilities
 
