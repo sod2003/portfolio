@@ -33,7 +33,7 @@ A folder for my Python scripts. This was probably the most fun to experiment wit
   * Script: xmlparsing.py - Load and parse XML in memory
 
 ### Java-Design-Patterns
-A collection of my explorations in Design Patterns using Java
+A collection of my explorations in Design Patterns using Java.
 
 - [X] Abstract Factory
 - [X] Decorator
