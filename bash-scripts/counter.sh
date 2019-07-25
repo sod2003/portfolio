@@ -6,7 +6,7 @@ USER=$1
 
 while [ $COUNT -lt $USER ]
 do
-	echo "$COUNT"
+	echo "Count: $COUNT"
 	((COUNT++))
 done
 
