@@ -52,4 +52,4 @@ A folder for my JavaScript files.
 * Typing Speed Test - An interactive program for a Typing Speed Test. Runs a timer until the participant enters the correct text prompt. Continuously checks for spelling errors, giving color-coded feedback.
 
 ### LearnC
-A folder for my C files.
+A folder for C fundamentals and experiments.
