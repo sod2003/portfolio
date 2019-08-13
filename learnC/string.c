@@ -13,7 +13,7 @@ int main() {
     printf("Enter your last name.\n");
     fgets(last,20,stdin);
     strncpy(buffer,first,len-1); //By using len-1, I avoid including the newline character that's captured in the first string.
-    strcat(buffer,space); //When concatenating the last name to the buffer, both strings wouldn't intuitively have a space between them without purposefully adding one.
+    strcat(buffer,space); //When concatenating the last name to the buffer, no space exists without adding one for separation.
     strcat(buffer,last);
     printf("Your full name is: %s", buffer);
     return 0;
