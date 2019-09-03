@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1564366251 source:/home/sean/Documents/portfolio/LearnC/helloWorld.c
+	<stdio.h>
+
+1564456762 source:/home/sean/Documents/portfolio/learnC/dummy.c
+	<stdio.h>
+
+1564540869 source:/home/sean/Documents/portfolio/learnC/math.c
+	<stdio.h>
+	<math.h>
+
