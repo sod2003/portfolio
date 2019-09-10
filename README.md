@@ -35,14 +35,15 @@ A folder for my Python scripts. This was probably the most fun to experiment wit
 ### Bash-Scripts
 A folder for my bash scripts.
 
-### Java-Design-Patterns
-A collection of my explorations in Design Patterns using Java.
+### Java
 
-- [X] Abstract Factory
-- [X] Decorator
-- [X] Template
-- [X] Observer
-- [ ] More to come
+* Java-Design-Patterns - A collection of my explorations in Design Patterns using Java.
+
+	- [X] Abstract Factory
+	- [X] Decorator
+	- [X] Template
+	- [X] Observer
+	- [ ] More to come
 
 ### js-scripts
 A folder for my JavaScript files.
