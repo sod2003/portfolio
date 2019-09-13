@@ -37,6 +37,8 @@ A folder for my bash scripts.
 
 ### Java
 
+* Fundamentals
+
 * Java-Design-Patterns - A collection of my explorations in Design Patterns using Java.
 
 	- [X] Abstract Factory
