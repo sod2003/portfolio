@@ -1,5 +1,6 @@
 import java.awt.*;
 import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
 
@@ -31,5 +32,12 @@ public class Main {
 
         double power = Math.pow(5, 3);
         System.out.println("5 raised to the power of 3 is: " + power);
+        double squareRoot = Math.sqrt(64);
+        System.out.println(squareRoot);
+
+        Random rand = new Random();
+        int randomNumber = rand.nextInt();
+        System.out.println("A Random number: " + randomNumber);
+
     }
 }
