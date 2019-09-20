@@ -30,6 +30,7 @@ public class Main {
         } else { System.out.println("You're an adult!"); }
         */
 
+        /*
         double power = Math.pow(5, 3);
         System.out.println("5 raised to the power of 3 is: " + power);
         double squareRoot = Math.sqrt(64);
@@ -38,6 +39,13 @@ public class Main {
         Random rand = new Random();
         int randomNumber = rand.nextInt();
         System.out.println("A Random number: " + randomNumber);
+         */
 
+        Coin c = new Coin();
+        System.out.println("Initial: " + c.getFaceUp());
+        for(int flip = 1; flip <= 10; flip++){
+            c.flip();
+            System.out.println("Flip " + flip + ": " + c.getFaceUp());
+        }
     }
 }
