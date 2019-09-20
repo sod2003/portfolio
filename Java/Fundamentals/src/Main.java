@@ -41,11 +41,18 @@ public class Main {
         System.out.println("A Random number: " + randomNumber);
          */
 
+        /*
         Coin c = new Coin();
         System.out.println("Initial: " + c.getFaceUp());
         for(int flip = 1; flip <= 10; flip++){
             c.flip();
             System.out.println("Flip " + flip + ": " + c.getFaceUp());
         }
+        */
+
+        Dice d = new Dice();
+        d.displayDice();
+        d.rollDice();
+        d.displayDice();
     }
 }
