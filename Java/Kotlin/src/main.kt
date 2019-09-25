@@ -1,5 +1,8 @@
+import Constants.Companion.RED
+
 fun main() {
     println("Hello World!")
+    println("My special constant is $RED")
     var myInt = 42
     var myDouble = myInt.toDouble()
     println("myInt is $myInt")
