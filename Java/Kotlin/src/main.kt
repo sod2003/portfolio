@@ -10,6 +10,8 @@ fun main() {
 
     var itsFunctional = addList(1, 2, 3)
     println("itsFunctional returns $itsFunctional")
+
+    nullExcept()
 }
 
 // Now for a cool function that allows a variable number of parameters
@@ -19,4 +21,10 @@ fun addList(vararg list: Int): Int {
         sum += i
     }
     return sum
+}
+
+fun nullExcept() {
+    val l:String? = null
+    println("Kotlin is null safe, except this function returns a $l")
+
 }
