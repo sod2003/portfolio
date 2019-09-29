@@ -1,6 +1,7 @@
 import Constants.Companion.RED
 
 fun main() {
+   /*
     println("Hello World!")
     println("My special constant is $RED")
     var myInt = 42
@@ -12,4 +13,10 @@ fun main() {
     println("itsFunctional returns $itsFunctional")
 
     nullExcept()
+
+    exception1()
+
+    */
+
+    calculator()
 }
