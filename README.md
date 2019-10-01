@@ -47,6 +47,8 @@ A folder for my bash scripts.
 	- [X] Observer
 	- [ ] More to come
 
+* Kotlin - An exploration of Kotlin
+
 ### js-scripts
 A folder for my JavaScript files.
 
