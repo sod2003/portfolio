@@ -37,7 +37,7 @@ A folder for my bash scripts.
 
 ### Java
 
-* Fundamentals
+* Fundamentals - A collection of code examples for Java.
 
 * Java-Design-Patterns - A collection of my explorations in Design Patterns using Java.
 
