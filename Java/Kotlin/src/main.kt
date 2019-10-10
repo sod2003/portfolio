@@ -50,11 +50,13 @@ fun main() {
 //        println(e.message)
 //    }
 
-    val item = DataItem("Thing", "Big", 10.0)
-    println(item)
-    val item2 = DataItem(size = "Tiny", price = 5.0)
-    println(item2)
-    println("Item type is ${item2.type}")
-    item2.price = 10.0
-    println("Item price is ${item2.price}")
+//    val item = DataItem("Thing", "Big", 10.0)
+//    println(item)
+//    val item2 = DataItem(size = "Tiny", price = 5.0)
+//    println(item2)
+//    println("Item type is ${item2.type}")
+//    item2.price = 10.0
+//    println("Item price is ${item2.price}")
+
+    arrays()
 }
