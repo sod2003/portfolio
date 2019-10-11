@@ -70,5 +70,24 @@ fun sets() {
     colorSet.add("Purple")
     colorSet.remove("Green")
     println(colorSet)
+}
+
+//A function for demonstrating maps
+fun maps() {
+    val colorMap = mapOf(
+        Pair("Red", 0xFF0000),
+        Pair("Green", 0x00FF00),
+        Pair("Blue", 0x0000FF)
+    )
+    println(colorMap)
+
+    val stateMap = mutableMapOf<String, String>()
+    stateMap.put("CA", "Sacramento")
+    stateMap.put("OR", "Salem")
+    stateMap.put("WA", "Olympia")
+    println(stateMap)
+    for ((state, capital) in stateMap) {
+        println("The state capital of $state is $capital")
+    }
     
 }

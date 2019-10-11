@@ -60,5 +60,6 @@ fun main() {
 
 //    arrays()
 //    lists()
-    sets()
+//    sets()
+    maps()
 }
