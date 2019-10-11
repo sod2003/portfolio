@@ -58,5 +58,7 @@ fun main() {
 //    item2.price = 10.0
 //    println("Item price is ${item2.price}")
 
-    arrays()
+//    arrays()
+//    lists()
+    sets()
 }

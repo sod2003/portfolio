@@ -46,3 +46,29 @@ fun arrays() {
         println(element)
     }
 }
+
+// A function for demonstrating lists
+fun lists() {
+    val colorList = listOf("Red", "Green", "Blue")
+    println(colorList)
+    println("Number of Colors: ${colorList.size}")
+    var colorList2 = mutableListOf<String>()
+    colorList2.add("Red")
+    colorList2.add("Green")
+    colorList2.add("Blue")
+    println(colorList2)
+    colorList2.sort()
+    println(colorList2)
+    val sortList = colorList2.sortedDescending()
+    println(sortList)
+}
+
+//A function demonstrating sets
+fun sets() {
+    val colorSet = mutableSetOf<String>("Red", "Green", "Blue")
+    println(colorSet)
+    colorSet.add("Purple")
+    colorSet.remove("Green")
+    println(colorSet)
+    
+}
