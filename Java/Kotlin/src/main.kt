@@ -69,9 +69,28 @@ fun main() {
 //    println(sub)
 //    println("SubClass multiplied by 3 returns: ${sub.multiply(3)}")
 
-    val buster = Retriever()
+//    val buster = Retriever()
 //    buster.speak()
-    makeItTalk(buster)
-    reportBreed("Buster", buster)
+//    makeItTalk(buster)
+//    reportBreed("Buster", buster)
+
+//    val stateful = StatefulClass(object: ClickListener {
+//        override fun onClick(event: ClickEvent) {
+//            println("Click at ${event.x} and ${event.y}")
+//        }
+//    })
+//    println("Listener initialized")
+//    stateful.clickMe(5, 16)
+//    stateful.clickMe(45, 56)
+
+    val helloWorld = {
+        println("Hello World!")
+    }
+    helloWorld()
+
+    val sayHello = {
+        user: String -> println("Hello, $user")
+    }
+    sayHello("Sean")
 
 }
