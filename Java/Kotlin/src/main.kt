@@ -61,5 +61,17 @@ fun main() {
 //    arrays()
 //    lists()
 //    sets()
-    maps()
+//    maps()
+
+//    val sup = SuperClass(42)
+//    println(sup)
+//    val sub = SubClass(53)
+//    println(sub)
+//    println("SubClass multiplied by 3 returns: ${sub.multiply(3)}")
+
+    val buster = Retriever()
+//    buster.speak()
+    makeItTalk(buster)
+    reportBreed("Buster", buster)
+
 }

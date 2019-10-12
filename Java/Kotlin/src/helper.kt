@@ -89,5 +89,5 @@ fun maps() {
     for ((state, capital) in stateMap) {
         println("The state capital of $state is $capital")
     }
-    
+
 }
