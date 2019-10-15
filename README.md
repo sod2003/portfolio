@@ -1,5 +1,5 @@
 # Portfolio
-This repo is where all my old projects get moved to. Every folder in this repo was formerly its own repository before being flattened and moved here.
+All of my notes and experiments with various programming languages and technologies are stored in this repository. This repo is also where all my old projects get moved to, formerly being in their own repository before being flattened and moved here.
 
 ### learning-flask
 This folder contains files from a previous attempt at creating a flask app that I hosted on Heroku. This is no longer hosted.
@@ -37,7 +37,7 @@ A folder for my bash scripts.
 
 ### Java
 
-* Fundamentals - A collection of code examples for Java.
+* Fundamentals - Code examples for Java fundamentals.
 
 * Java-Design-Patterns - A collection of my explorations in Design Patterns using Java.
 
