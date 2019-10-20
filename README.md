@@ -47,7 +47,7 @@ A folder for my bash scripts.
 	- [X] Observer
 	- [ ] More to come
 
-* Kotlin - Code examples of Kotlin for use with Android development.
+* Kotlin - Code examples of Kotlin. Learning for use with Android development.
 
 ### js-scripts
 A folder for my JavaScript files.
