@@ -50,7 +50,7 @@ A folder for my bash scripts.
 * Kotlin - Code examples of Kotlin. Learning for use with Android development.
 
 ### js-scripts
-A folder for my JavaScript files.
+A folder for my JavaScript files and experiments.
 
 * Clock - A SVG Clock, made dynamic with JavaScript.
 
