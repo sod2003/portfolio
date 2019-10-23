@@ -1,5 +1,5 @@
 # Portfolio
-All of my notes and experiments with various programming languages and technologies are stored in this repository. This repo is also where all my old projects get moved to, formerly being in their own repository before being flattened and moved here.
+All of my notes and experiments, with various programming languages and technologies, are stored in this repository. This repo is also where all my old projects get moved to, formerly being in their own repository before being flattened and moved here.
 
 ### learning-flask
 This folder contains files from a previous attempt at creating a flask app that I hosted on Heroku. This is no longer hosted.
