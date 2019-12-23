@@ -5,7 +5,7 @@ def function():
     while(b < 1000):
         print(b, end = ' ', flush = True)
         a, b = b, a + b
-    
+
 def main():
     function()
 
