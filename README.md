@@ -9,6 +9,9 @@ This folder contains files from a previous attempt at creating a flask app that 
 
 ### Python
 
+* __Fundamentals__
+Exploring basic concepts in the language. 
+
 * __Algorithms__
 A folder for experimenting with data structures and algorithms in Python.
 
