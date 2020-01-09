@@ -12,3 +12,14 @@ tenCent = Decimal('.10')
 thirtyCent = Decimal('.30')
 z = tenCent + tenCent + tenCent - thirtyCent
 print(f'So with the imported decimal module, we can get the right value of {z}')
+
+x = 47
+y = divmod(x, 3)
+
+print(f'x is {type(x)}')
+print(f'x is {x}')
+print(f'y is {type(y)}')
+print(f'y is {y}')
+y = x + 47j
+print(f'y is now {type(y)}')
+print(f'y is now {y}')
