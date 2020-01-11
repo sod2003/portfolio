@@ -25,6 +25,6 @@ def main():
 
     now = datetime.datetime.now()
     print(now)
-    print(now.year, now.month, now.day, now.hour, now.minute, now.second, now.microsecond)
+    print('Year:', now.year, 'Month:', now.month, 'Day:', now.day, 'Hour:', now.hour, 'Minute:', now.minute, 'Second:', now.second, 'Microsecond:', now.microsecond)
 
 if __name__ == '__main__': main()
