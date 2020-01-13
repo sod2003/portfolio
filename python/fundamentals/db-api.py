@@ -29,7 +29,7 @@ def main():
     print('Counting rows')
     cur.execute("SELECT COUNT(*) FROM test")
     count = cur.fetchone()[0]
-    print(f'There are {count} rows in the table.')
+    print(f'There are {count} rows in the table')
     print('Reading rows')
     for row in cur.execute("SELECT * FROM test"):
         print(row)
