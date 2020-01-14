@@ -11,5 +11,6 @@ def action(**kwargs):
 def main():
     x = dict(One = 'Family Time', Two = 'Snacks', Three = 'Games')
     action(**x) # Passing a reference to the dictionary
+    print('...and a partridge in a pear tree.')
 
 if __name__ == '__main__': main()
