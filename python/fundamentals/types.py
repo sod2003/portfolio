@@ -14,7 +14,7 @@ z = tenCent + tenCent + tenCent - thirtyCent
 print(f'So with the imported decimal module, we can get the right value of {z}')
 
 x = 47
-y = divmod(x, 3)
+y = divmod(x, 3) # divmod returns a tuple of quotient and remainder
 
 print(f'x is {type(x)}')
 print(f'x is {x}')
