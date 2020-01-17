@@ -9,9 +9,6 @@ This folder contains files from a previous attempt at creating a flask app that 
 
 ### Python
 
-* __Fundamentals__
-A folder for exploring basic concepts and modules in the Python language. 
-
 * __Algorithms__
 A folder for experimenting with data structures and algorithms in Python.
 
@@ -22,6 +19,9 @@ A folder for experimenting with design patterns in Python
   * Structural
 
   * Behavioral
+
+* __Fundamentals__
+A folder for exploring basic concepts and modules in the Python language. 
 
 * __Scripts__
 A folder for my Python scripts. This was probably the most fun to experiment with.
@@ -34,6 +34,9 @@ A folder for my Python scripts. This was probably the most fun to experiment wit
   * Script: htmlparser.py - Custom HTML parser
 
   * Script: xmlparsing.py - Load and parse XML in memory
+
+* __URL-Shortener__
+A Flask project to host a URL shortener functionality.
 
 ### Bash-Scripts
 A folder for my bash scripts.
