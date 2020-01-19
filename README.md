@@ -36,7 +36,7 @@ A folder for my Python scripts. This was probably the most fun to experiment wit
   * Script: xmlparsing.py - Load and parse XML in memory
 
 * __URL-Shortener__
-A Flask project to host a URL shortener functionality.
+A Flask project to showcase a URL shortener functionality.
 
 ### Bash-Scripts
 A folder for my bash scripts.
