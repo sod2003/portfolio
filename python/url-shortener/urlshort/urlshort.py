@@ -27,7 +27,7 @@ def your_url():
         else:
             f = request.files['file']
             full_name = request.form['code'] + secure_filename(f.filename)
-            f.save('C:/Users/16786/Documents/portfolio/python/url-shortener/static/user_files/' + full_name)
+            f.save('C:/Users/16786/Documents/portfolio/python/url-shortener/urlshort/static/user_files/' + full_name)
             urls[request.form['code']] = {'file':full_name}
 
         with open('urls.json', 'w') as url_file:
