@@ -1,12 +1,6 @@
 # Portfolio
 All of my notes and experiments, with various programming languages and technologies, are stored in this repository. This repo is also where all my old projects get moved to, formerly being in their own repository before being flattened and moved here.
 
-### learning-flask
-This folder contains files from a previous attempt at creating a flask app that was hosted on Heroku. It is no longer hosted.
-
-- [X] Built
-- [ ] Hosted
-
 ### Python
 
 * __Algorithms__
@@ -23,6 +17,12 @@ A folder for experimenting with design patterns in Python
 * __Fundamentals__
 A folder for exploring basic concepts and modules in the Python language. 
 
+* __learning-flask__
+This folder contains files from a previous attempt at creating a flask app that was hosted on Heroku. It is no longer hosted.
+
+- [X] Built (Must rebuild app.py)
+- [ ] Hosted
+
 * __Scripts__
 A folder for my Python scripts. This was probably the most fun to experiment with.
   * Script: pythonutils.py - Showcases the use of some Shell Utilities
@@ -37,6 +37,9 @@ A folder for my Python scripts. This was probably the most fun to experiment wit
 
 * __URL-Shortener__
 A Flask project to showcase a URL shortener functionality.
+
+- [X] Built
+- [ ] Hosted
 
 ### Bash-Scripts
 A folder for my bash scripts.
