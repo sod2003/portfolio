@@ -51,6 +51,7 @@ public class Main {
         */
 
         Dice d = new Dice();
+        d.displayPrev();
         d.rollDice();
         d.displayPrev();
     }

@@ -1,7 +1,8 @@
 import java.util.Random;
 
 public class Dice {
-
+    
+    static int sidesOfDice = 6;
     Random rand;
     int prevRoll;
 
@@ -12,7 +13,7 @@ public class Dice {
     }
 
     public void rollDice() {
-        int currRoll = this.rand.nextInt(6) + 1;
+        int currRoll = this.rand.nextInt(sidesOfDice) + 1;
         prevRoll = currRoll;
         System.out.println(currRoll);
     }
