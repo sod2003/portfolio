@@ -50,9 +50,13 @@ public class Main {
         }
         */
 
-        Dice d = new Dice();
-        d.displayPrev();
-        d.rollDice();
-        d.displayPrev();
+        // Dice d = new Dice();
+        // d.displayPrev();
+        // d.rollDice();
+        // d.displayPrev();
+
+        String example = new String("Hello");
+        System.out.print(example.toUpperCase());
+
     }
 }
