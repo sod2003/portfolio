@@ -55,8 +55,8 @@ public class Main {
         // d.rollDice();
         // d.displayPrev();
 
-        String example = new String("Hello");
-        System.out.print(example.toUpperCase());
+        String example = new String("Hello ");
+        System.out.print(example.toUpperCase().trim() + ", there!");
 
     }
 }
