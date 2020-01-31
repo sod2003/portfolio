@@ -56,7 +56,10 @@ public class Main {
         // d.displayPrev();
 
         String example = new String("Hello ");
-        System.out.print(example.toUpperCase().trim() + ", there!");
+        System.out.println(example.toUpperCase().trim() + ", there!");
+        for(int i = example.length() - 1; i > -1; i--) {
+            System.out.print(example.charAt(i));
+        }
 
     }
 }
