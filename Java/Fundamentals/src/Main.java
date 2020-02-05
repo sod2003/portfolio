@@ -57,7 +57,7 @@ public class Main {
 
         String example = new String("Hello ");
         System.out.println(example.toUpperCase().trim() + ", there!");
-        for(int i = example.length() - 1; i > -1; i--) {
+        for(int i = example.length() - 2; i > -1; i--) { // i starts with length() - 2 to account for the space at the end of the string
             System.out.print(example.charAt(i));
         }
 
