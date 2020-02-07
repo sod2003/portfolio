@@ -12,13 +12,17 @@ public class Dice {
         int prevRoll;
     }
 
-    public void rollDice() {
+    public int rollDice() {
         int currRoll = this.rand.nextInt(sidesOfDice) + 1;
         prevRoll = currRoll;
-        System.out.println(currRoll);
+        return currRoll;
     }
 
     public void displayPrev() {
-        System.out.println("Previous roll: " + prevRoll);
+        if(prevRoll == 0) {
+            System.out.println("No previous roll");
+        } else {
+            System.out.println("Previous roll: " + prevRoll);
+        }
     }
 }

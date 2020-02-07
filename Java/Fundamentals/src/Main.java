@@ -50,10 +50,10 @@ public class Main {
         }
         */
 
-        // Dice d = new Dice();
-        // d.displayPrev();
-        // d.rollDice();
-        // d.displayPrev();
+        Dice d = new Dice();
+        d.displayPrev();
+        System.out.println("The roll is: " + d.rollDice());
+        d.displayPrev();
 
         String example = new String("Hello ");
         System.out.println(example.toUpperCase().trim() + " there!");
