@@ -26,3 +26,10 @@ if kitten < tiger:
 mouse = 1
 if mouse < kitten and mouse < tiger:
     print("The mouse weighs the least")
+
+# len() --> returns length
+name = "Sean"
+print(len(name))
+name.__len__()
+listOfNames = ["Sean", "David", "Charlie"]
+print(len(listOfNames))
