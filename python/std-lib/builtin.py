@@ -29,7 +29,15 @@ if mouse < kitten and mouse < tiger:
 
 # len() --> returns length
 name = "Sean"
-print(len(name))
-name.__len__()
+print("the length of the name is", len(name))
+name.__len__() # Length is a property of the object
 listOfNames = ["Sean", "David", "Charlie"]
-print(len(listOfNames))
+print("The length of the list of names is", len(listOfNames))
+
+# range(x) --> Holds numbers between 0 and x
+number = range(15)
+
+# list() --> Lists out the objects within a container
+print(list(number))
+for x in number:
+    print("Number", x)
