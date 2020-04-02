@@ -41,3 +41,9 @@ number = range(15)
 print(list(number))
 for x in number:
     print("Number", x)
+
+# Min and Max
+scores = [0, 2, 4, 5, 3]
+print("The scores are:", scores)
+print("The Minimum score is", min(scores))
+print("The Maximum score is", max(scores))
