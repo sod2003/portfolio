@@ -47,3 +47,9 @@ scores = [0, 2, 4, 5, 3]
 print("The scores are:", scores)
 print("The Minimum score is", min(scores))
 print("The Maximum score is", max(scores))
+
+# Rounding 'round(x)', absolute values 'abs(x)', and exponents 'pow(x, y)'
+digit = 3.4
+print("Rounding 3.4 to", round(digit))
+print("The absolute value of -3 is", abs(-3))
+print("2 raised to the power of 3 is", pow(2, 3))
