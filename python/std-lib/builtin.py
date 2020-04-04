@@ -53,3 +53,23 @@ digit = 3.4
 print("Rounding 3.4 to", round(digit))
 print("The absolute value of -3 is", abs(-3))
 print("2 raised to the power of 3 is", pow(2, 3))
+
+# sorted(x)
+scores = [0, 2, 14, 5, 7]
+sortedScores = sorted(scores)
+print("The sorted scores are", sortedScores)
+print("And backwards", sorted(scores, reverse=True))
+print(sorted("This sentence is sorted case-insensitive".split(), key=str.upper))
+students= [('Alice', 'B', 12), ('Eliza', 'A', 16), ('Gene', 'C', 15)]
+print("The students sorted by their grades is:", sorted(students, key=lambda student:student[1]))
+
+# type(x)
+r=range(0,30)
+print("The type of r is", type(r))
+
+# isinstance(x, y)
+class Car:
+    pass
+
+c = Car()
+print("c is an instance of Car:", isinstance(c, Car))
