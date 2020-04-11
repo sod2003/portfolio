@@ -19,3 +19,6 @@ myFile.close()
 # Read the file
 myFile = open("scores.txt.", "r")
 print("Reading...", myFile.read())
+
+# Reset seek pointer to beginning of file, if rereading and not closing the file
+myFile.seek(0)
