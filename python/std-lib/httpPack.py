@@ -11,3 +11,6 @@ with urllib.request.urlopen("https://www.googleapis.com/books/v1/volumes?q=isbn:
 obj = json.loads(decodedText)
 print('\nThe "kind" attribute has the value:', obj['kind'])
 print('\nThe attributes can be chained to find and print information deep within the JSON structure:', obj['items'][0]['searchInfo']['textSnippet'])
+
+obj['items'][0]['searchInfo']['textSnippet'] = "I've changed the text snippet to nonsense #@TRF$EG%$RGERdbsibtada!"
+print('\nI can even changed the values of the attributes in my local copy:', obj['items'][0]['searchInfo']['textSnippet'])
