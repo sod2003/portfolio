@@ -14,7 +14,7 @@ A folder for experimenting with design patterns in Python
 
   * Behavioral
 
-* __Fundamentals__
+* __fundamentals__
 A folder for exploring basic concepts and modules in the Python language. 
 
 * __learning-flask__
@@ -23,7 +23,7 @@ This folder contains files from a previous attempt at creating a flask app that 
 - [X] Built (Must rebuild app.py)
 - [ ] Hosted
 
-* __Scripts__
+* __python-scripts__
 A folder for my Python scripts. This was probably the most fun to experiment with.
   * Script: pythonutils.py - Showcases the use of some Shell Utilities
 
@@ -35,7 +35,10 @@ A folder for my Python scripts. This was probably the most fun to experiment wit
 
   * Script: xmlparsing.py - Load and parse XML in memory
 
-* __URL-Shortener__
+* __std-lib__
+A folder showcasing the use of modules within the Python standard library.
+
+* __url-shortener__
 A Flask project to showcase a URL shortener functionality.
 
 - [X] Built
