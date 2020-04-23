@@ -8,3 +8,4 @@ while True:
     clientsocket, address = s.accept() # Will accept a connection from another socket object
     print(f'Connection from {address} has been established')
     clientsocket.send(bytes('Welcome to the server!', 'utf-8'))
+    clientsocket.close()
