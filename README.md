@@ -36,7 +36,7 @@ A folder for my Python scripts. This was probably the most fun to experiment wit
   * Script: xmlparsing.py - Load and parse XML in memory
 
 * __sockets__
-Using the Python socket library
+Using the Python socket library to establish mock server and client communications.
 
 * __std-lib__
 A folder showcasing the use of modules within the Python standard library.
