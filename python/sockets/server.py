@@ -8,7 +8,7 @@ s.listen(5) # This provides a listening queue of 5 for the server
 
 while True:
     clientsocket, address = s.accept() # Will accept a connection from another socket object
-    print(f'Connection from {address} has been established')
+    print(f'Connection with {address} has been established')
     msg = 'Welcome to the server!'
     msg = f'{len(msg):<{HEADERSIZE}}' + msg # The HEADER is the length of message
     clientsocket.send(bytes(msg, 'utf-8'))
