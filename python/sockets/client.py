@@ -1,4 +1,4 @@
-import socket
+import socket, pickle
 
 HEADERSIZE = 10
 
@@ -7,7 +7,7 @@ s.connect((socket.gethostname(), 1234)) # Same information as used in the server
 
 while True:
 
-    full_msg = ''
+    full_msg = b'' # Expecting bytes, remove b if not in bytes
     new_msg = True
     while True:
         msg = s.recv(16) # Receive the server connect msg with a 16 byte buffer
@@ -16,12 +16,16 @@ while True:
             msglen = int(msg[:HEADERSIZE])
             new_msg = False # We only need to get the message length on the initial pass through
 
-        full_msg += msg.decode('utf-8')
+        full_msg += msg  # If not bytes passing through then must attach .decode('utf-8') to msg
 
         if len(full_msg) - HEADERSIZE == msglen:
             print('full message received')
             print(full_msg[HEADERSIZE:])
+
+            d = pickle.loads(full_msg[HEADERSIZE:])
+            print(d)
+
             new_msg = True
-            full_msg = ''
+            full_msg = b'' # Expecting bytes, remove b if not in bytes
 
 print(full_msg)

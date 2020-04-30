@@ -1,4 +1,4 @@
-import socket, time
+import socket, time, pickle
 
 HEADERSIZE = 10
 
@@ -9,12 +9,10 @@ s.listen(5) # This provides a listening queue of 5 for the server
 while True:
     clientsocket, address = s.accept() # Will accept a connection from another socket object
     print(f'Connection with {address} has been established')
-    msg = 'Welcome to the server!'
-    msg = f'{len(msg):<{HEADERSIZE}}' + msg # The HEADER is the length of message
-    clientsocket.send(bytes(msg, 'utf-8'))
-    
-    while True:
-        time.sleep(3)
-        msg = f'The time is {time.time()}'
-        msg = f'{len(msg):<{HEADERSIZE}}' + msg
-        clientsocket.send(bytes(msg, 'utf-8'))
+
+    d = {1: 'Sup', 2: 'YOLO'}
+    msg = pickle.dumps(d)
+    #print(msg) 
+
+    msg = bytes(f'{len(msg):<{HEADERSIZE}}', 'utf-8') + msg # The HEADER is the length of message
+    clientsocket.send(msg) # If msg is not already converted to bytes, then it should be done here eq. bytes(msg, 'utf-8')
