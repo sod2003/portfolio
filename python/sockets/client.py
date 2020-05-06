@@ -12,14 +12,14 @@ while True:
     while True:
         msg = s.recv(16) # Receive the server connect msg with a 16 byte buffer
         if new_msg:
-            print(f'new message length: {msg[:HEADERSIZE]}')
+            print(f'New message length: {msg[:HEADERSIZE]}')
             msglen = int(msg[:HEADERSIZE])
             new_msg = False # We only need to get the message length on the initial pass through
 
         full_msg += msg  # If not bytes passing through then must attach .decode('utf-8') to msg
 
         if len(full_msg) - HEADERSIZE == msglen:
-            print('full message received')
+            print('Full message received')
             print(full_msg[HEADERSIZE:])
 
             d = pickle.loads(full_msg[HEADERSIZE:])
