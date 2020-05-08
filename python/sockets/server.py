@@ -10,7 +10,7 @@ while True:
     clientsocket, address = s.accept() # Will accept a connection from another socket object
     print(f'Connection with {address} has been established')
 
-    d = {1: 'Howdy', 2: 'Get along, little doggie'}
+    d = {1: 'Howdy', 2: 'Sasparilla'}
     msg = pickle.dumps(d)
     #print(msg) 
 
