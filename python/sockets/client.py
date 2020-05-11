@@ -16,7 +16,7 @@ while True:
             msglen = int(msg[:HEADERSIZE])
             new_msg = False # We only need to get the message length on the initial pass through
 
-        full_msg += msg  # If not bytes passing through then must attach .decode('utf-8') to msg
+        full_msg += msg  # If not bytes passing through, then must attach .decode('utf-8') to msg "msg.decode('utf-8')"
 
         if len(full_msg) - HEADERSIZE == msglen:
             print('Full message received')
