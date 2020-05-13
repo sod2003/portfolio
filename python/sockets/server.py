@@ -16,4 +16,4 @@ while True:
 
     msg = bytes(f'{len(msg):<{HEADERSIZE}}', 'utf-8') + msg # The HEADER is the length of message
     clientsocket.send(msg) # If msg is already converted to bytes i.e. sending a pickled object
-    # clientsocket.send(bytes(msg, 'utf-8')) # If msg is not already converted to bytes
+    # clientsocket.send(bytes(msg, 'utf-8')) # If msg was not converted to bytes
