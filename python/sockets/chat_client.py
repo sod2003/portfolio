@@ -27,7 +27,7 @@ while True:
             # Receive messages from server
             username_header = client_socket.recv(HEADER_LENGTH)
             if not len(username_header):
-                print("connection closed by the server")
+                print("Connection closed by the server")
                 sys.exit()
             username_length = int(username_header.decode("utf-8").strip())
             username_decoded = client_socket.recv(username_length).decode("utf-8")
