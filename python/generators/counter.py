@@ -7,21 +7,22 @@
 def counter(string):
     count = 0
     try:
-        item = yield
-        if isinstance(item, str):
-            if item in string:
-                count += 1
-                print(item)
+        while True:
+            item = (yield)
+            if isinstance(item, str):
+                if item in string:
+                    count += 1
+                    print(item)
+                else:
+                    print("No match")
             else:
-                print("No match")
-        else:
-            print("Not a string")
+                print("Not a string")
     except GeneratorExit:
         print(count)
 
 def main():
     c = counter("Georgia")
-    c.__next__()                 # The __next__() call will prime the coroutine to accept data without error
+    next(c)                # The next() call will prime the coroutine to accept data without error
     c.send("Geo")
     c.send("Atlanta")
     c.send(123)
