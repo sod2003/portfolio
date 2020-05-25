@@ -35,7 +35,7 @@ def main():
     c = match_counter('Da')
     sender('names.txt', c)
     print('\n')
-    l = longer_than(5)
+    l = longer_than(15)
     sender('names.txt', l)
 
 if __name__ == '__main__': main()
