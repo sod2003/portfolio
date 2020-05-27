@@ -17,6 +17,9 @@ A folder for experimenting with design patterns in Python
 * __fundamentals__
 A folder for exploring basic concepts and modules in the Python language. 
 
+* __generators__
+A folder for displaying the use of generators for iterating through large datasets, and in use with context managers and coroutines.
+
 * __learning-flask__
 This folder contains files from a previous attempt at creating a flask app that was hosted on Heroku. It is no longer hosted.
 
