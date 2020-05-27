@@ -1,8 +1,8 @@
 from time import time
 from contextlib import contextmanager
 
-HEADER = "this is the header\n"
-FOOTER = "\nthis is the footer \n"
+HEADER = "This is the header\n"
+FOOTER = "\nThis is the footer \n"
 
 @contextmanager
 def log_file(name):
@@ -18,6 +18,6 @@ def log_file(name):
 
 def main():
     with log_file('logfile') as file:
-        file.write('this is the body')    # Writes this statement to the logfile after setup
+        file.write('This is the body')    # Writes this statement to the logfile after setup
 
 if __name__ == '__main__': main()
