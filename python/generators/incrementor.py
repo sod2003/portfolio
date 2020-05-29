@@ -20,6 +20,6 @@ def main():
     print('The object was initialized with value: ', obj.some_property)
     with simple_context_manager(obj):
         print('The context manager yields: ', obj.some_property)
-    print('The object value after the context manager wraps up: ', obj.some_property)
+    print('The object value after the context manager calls finally: ', obj.some_property)
 
 if __name__ == '__main__': main()
