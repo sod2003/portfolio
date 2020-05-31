@@ -4,11 +4,11 @@ from contextlib import contextmanager
 @contextmanager
 def simple_context_manager(obj):
     try:
-        # do something
+        # The initial setup before handing off to the caller
         obj.some_property += 1
         yield
     finally:
-        # wrap up
+        # Wrap up after the caller is finished
         obj.some_property -= 1
 
 class Some_obj(object):
