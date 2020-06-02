@@ -15,7 +15,7 @@ def main():
                 datetime_list.append(datetime(*list(map(int, datetime_re.findall(row['date       time    '])))))
 
         print('Printing data')
-        for row in range(len(barpress_list)):
-            print(barpress_list[row], datetime_list[row])
+        for row in range(5):
+            print(barpress_list[row], datetime_list[row])  # Printing the first 5 rows from each year
 
 if __name__ == '__main__': main()
