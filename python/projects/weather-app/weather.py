@@ -1,6 +1,15 @@
 from csv import DictReader
 import re
 from datetime import datetime
+from tkinter import *
+from tkinter import ttk, messagebox
+
+import numpy as np
+import matplotlib
+from matplotlib.dates import date2num, num2date
+from matplotlib.figure import Figure
+from matplotlib.backends.backend_tkagg import (
+    FigureCanvasTkAgg, NavigationToolbar2TkAgg)
 
 def main():
 
@@ -12,7 +21,10 @@ def main():
         print('Loading {0}'.format(fname))
         for row in DictReader(open(fname,'r'),delimiter='\t'):
                 barpress_list.append(float(row['Barometric_Press']))
-                datetime_list.append(datetime(*list(map(int, datetime_re.findall(row['date       time    '])))))
+                datetime_list.append(date2num(datetime(*list(map(int, datetime_re.findall(row['date       time    ']))))))
+
+        datetime_array = np.array(datetime_list)
+        barpress_array = np.array(barpress_list)
 
         print('Printing data')
         for row in range(5):
