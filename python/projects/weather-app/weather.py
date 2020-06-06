@@ -9,7 +9,7 @@ import matplotlib
 from matplotlib.dates import date2num, num2date
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import (
-    FigureCanvasTkAgg, NavigationToolbar2TkAgg)
+    FigureCanvasTkAgg, NavigationToolbar2Tk)
 
 class WeatherStatistics:
 
@@ -44,7 +44,7 @@ class WeatherStatistics:
             self.canvas = FigureCanvasTkAgg(f, master)
             self.canvas.draw()
             toolbar_frame = ttk.Frame(master) # Puts NavBar above plot
-            toolbar = NavigationToolbar2TkAgg(self.canvas, toolbar_frame)
+            toolbar = NavigationToolbar2Tk(self.canvas, toolbar_frame)
             toolbar.update()
             toolbar_frame.pack(side=TOP, fill=X, expand=0)
             self.canvas._tkcanvas.pack(fill=BOTH, expand=1)
