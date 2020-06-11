@@ -26,6 +26,17 @@ This folder contains files from a previous attempt at creating a flask app that 
 - [X] Built (Must rebuild app.py)
 - [ ] Hosted
 
+* __projects__
+A folder for python projects
+  * __location__
+  A project folder for programs for finding and printing geolocation data
+  * __url-shortener__
+  A Flask project to showcase a URL shortener functionality.
+    - [X] Built
+    - [ ] Hosted
+  * __weather-app__
+  A program with GUI for plotting and displaying a set of weather data using matplotlib, tkinter and numpy.
+
 * __python-scripts__
 A folder for my Python scripts. This was probably the most fun to experiment with.
   * Script: pythonutils.py - Showcases the use of some Shell Utilities
@@ -44,11 +55,6 @@ Using the Python socket library to establish mock server and client communicatio
 * __std-lib__
 A folder showcasing the use of modules within the Python standard library.
 
-* __url-shortener__
-A Flask project to showcase a URL shortener functionality.
-
-- [X] Built
-- [ ] Hosted
 
 ### Bash-Scripts
 A folder for my bash scripts.
