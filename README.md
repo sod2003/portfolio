@@ -29,7 +29,7 @@ This folder contains files from a previous attempt at creating a flask app that 
 * __projects__
 A folder for python projects
   * __location__
-  A project folder for programs that display geolocation data
+  A project folder for programs that display geolocation data using IP lookups and the Google Maps API
   * __url-shortener__
   A Flask project to showcase a URL shortener functionality.
     - [X] Built

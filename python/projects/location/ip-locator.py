@@ -1,4 +1,5 @@
-# Geolocation from IP lookups
+#!/usr/bin/python3
+""" Geolocation from IP lookups """
 from urllib import request
 import json
 
