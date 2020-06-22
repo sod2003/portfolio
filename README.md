@@ -35,7 +35,7 @@ A folder for python projects
     - [X] Built
     - [ ] Hosted
   * __weather-app__
-  A program with GUI for plotting and displaying a set of weather data using matplotlib, tkinter and numpy.
+  A program with GUI for plotting a set of weather data using matplotlib, tkinter and numpy.
 
 * __python-scripts__
 A folder for my Python scripts. This was probably the most fun to experiment with.
