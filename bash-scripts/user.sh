@@ -12,12 +12,12 @@ do
 	elif [[ ! $NAME =~ ^[A-Za-z]+$ ]]
 	then
 	echo "Non alpha characters detected [$NAME]"
-continue
-elif [[ ! $AGE =~ ^[0-9]+$ ]]
-then
+	continue
+	elif [[ ! $AGE =~ ^[0-9]+$ ]]
+	then
 	echo "Non digit characters detected [$AGE]"
 	continue
-fi
+	fi
 VALID=1
 done
 echo "Name = $NAME and Age = $AGE"
