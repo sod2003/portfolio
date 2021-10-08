@@ -60,7 +60,7 @@ class ViewController: UIViewController {
     
     @IBAction func findButtonClick() {
         
-        // code to retrive the data from Cre Data file
+        // code to retrive the data from Core Data file
 
         let context = appDelegate.persistentContainer.viewContext
 

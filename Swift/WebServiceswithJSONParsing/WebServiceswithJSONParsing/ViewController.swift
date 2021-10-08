@@ -39,7 +39,8 @@ class ViewController: UIViewController {
                 print("Error:\n\(error1)")
             } else {
                 if let data1 = data {
-                    // server sents data in the form of bytes
+                    
+                    // server sends data in the form of bytes
 
                     print("Bytes Data:\n\(data1)")
 
@@ -48,9 +49,8 @@ class ViewController: UIViewController {
                     let dataString = String(data: data1, encoding: String.Encoding.utf8)
 
                     print("All the weather data:\n\(dataString!)")
-
                     
-                    // json parsing
+                    // JSON parsing
                                                           
                     if let firstDictionary = try? JSONSerialization.jsonObject(with: data1, options: .allowFragments) as? NSDictionary {
                                                        
@@ -59,7 +59,6 @@ class ViewController: UIViewController {
                         if let secondDictionary = firstDictionary.value(forKey: "main") as? NSDictionary {
                                                                   
                             print("main Dictionary values are: \(secondDictionary)")
-                                                               
                                                                
                             // to display temperature
                                                                
@@ -71,7 +70,7 @@ class ViewController: UIViewController {
                                 }
                             }
                                                                
-                            // to display Humidity
+                            // to display humidity
                                                                
                             if let humidityvalue = secondDictionary.value(forKey: "humidity") {
                                 DispatchQueue.main.async {
@@ -94,7 +93,7 @@ class ViewController: UIViewController {
                             print("Error: unable to find temperature in dictionary")
                         }
                     } else {
-                        print("Error: unable to convert json data")
+                        print("Error: unable to convert JSON data")
                     }
                 } else {
                     print("Error: did not receive data")
