@@ -10,8 +10,9 @@ import UIKit
 class customTableViewCell: UITableViewCell {
 
     @IBOutlet weak var label1: UILabel!
-    @IBOutlet weak var tv1: UITextView!
     @IBOutlet weak var iv1: UIImageView!
+    @IBOutlet weak var stepper: UIStepper!
+    @IBOutlet weak var countLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,4 +25,8 @@ class customTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBAction func stepperClick() {
+        
+        countLabel.text = String(Int(stepper.value))
+    }
 }

@@ -6,13 +6,13 @@
 //
 
 import UIKit
-import QuartzCore
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView1: UITableView!
     
-    var layer1, layer2, layer3: CALayer!
+    var namesArray: [String] = []
+    var imageArray: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +21,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView1.delegate = self
         tableView1.dataSource = self
         
+        namesArray = ["Eggs", "Milk", "Bacon"]
+        imageArray = ["egg.jpeg", "milk.jpeg", "bacon.jpeg"]
         
     }
     
@@ -29,31 +31,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return namesArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "identifier1", for: indexPath) as! customTableViewCell
         
-        cell.label1.text = "iOS App Training"
+        cell.label1.text = namesArray[indexPath.row]
         
-        layer1 = cell.label1.layer
-        layer1.borderWidth = 3
-        layer1.borderColor = UIColor.red.cgColor
-        layer1.cornerRadius = 1
-        
-        cell.iv1.image = UIImage(named: "lion.jpg")
-        layer2 = cell.iv1.layer
-        layer2.borderWidth = 3
-        layer2.borderColor = UIColor.black.cgColor
-        layer2.cornerRadius = 3
-        
-        cell.tv1.text = "Welcome to the Jungle, baby!"
-        layer3 = cell.tv1.layer
-        layer3.borderWidth = 3
-        layer3.borderColor = UIColor.blue.cgColor
-        layer3.cornerRadius = 2
+        cell.iv1.image = UIImage(named: imageArray[indexPath.row])
         
         return cell
     }

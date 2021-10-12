@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,8 +14,9 @@
 		1437294D2715DDF40062320B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1437294C2715DDF40062320B /* Assets.xcassets */; };
 		143729502715DDF40062320B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1437294E2715DDF40062320B /* LaunchScreen.storyboard */; };
 		143729742715E0E30062320B /* customTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143729732715E0E30062320B /* customTableViewCell.swift */; };
-		143729762715E33A0062320B /* lion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 143729752715E33A0062320B /* lion.jpg */; };
-		143729792715E62F0062320B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143729782715E62F0062320B /* QuartzCore.framework */; };
+		1437297D2715FC490062320B /* bacon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1437297A2715FC490062320B /* bacon.jpeg */; };
+		1437297E2715FC490062320B /* egg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1437297B2715FC490062320B /* egg.jpeg */; };
+		1437297F2715FC490062320B /* milk.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1437297C2715FC490062320B /* milk.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +48,9 @@
 		143729562715DDF40062320B /* CustomTableViewCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTableViewCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		143729602715DDF40062320B /* CustomTableViewCellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTableViewCellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		143729732715E0E30062320B /* customTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTableViewCell.swift; sourceTree = "<group>"; };
-		143729752715E33A0062320B /* lion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lion.jpg; sourceTree = "<group>"; };
-		143729782715E62F0062320B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1437297A2715FC490062320B /* bacon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bacon.jpeg; sourceTree = "<group>"; };
+		1437297B2715FC490062320B /* egg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = egg.jpeg; sourceTree = "<group>"; };
+		1437297C2715FC490062320B /* milk.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = milk.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				143729792715E62F0062320B /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +83,6 @@
 			children = (
 				143729422715DDF30062320B /* CustomTableViewCell */,
 				143729412715DDF30062320B /* Products */,
-				143729772715E62F0062320B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,7 +99,9 @@
 		143729422715DDF30062320B /* CustomTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				143729752715E33A0062320B /* lion.jpg */,
+				1437297A2715FC490062320B /* bacon.jpeg */,
+				1437297B2715FC490062320B /* egg.jpeg */,
+				1437297C2715FC490062320B /* milk.jpeg */,
 				143729432715DDF30062320B /* AppDelegate.swift */,
 				143729452715DDF30062320B /* SceneDelegate.swift */,
 				143729472715DDF30062320B /* ViewController.swift */,
@@ -110,14 +112,6 @@
 				143729732715E0E30062320B /* customTableViewCell.swift */,
 			);
 			path = CustomTableViewCell;
-			sourceTree = "<group>";
-		};
-		143729772715E62F0062320B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				143729782715E62F0062320B /* QuartzCore.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +194,7 @@
 				};
 			};
 			buildConfigurationList = 1437293B2715DDF30062320B /* Build configuration list for PBXProject "CustomTableViewCell" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -224,8 +218,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1437297E2715FC490062320B /* egg.jpeg in Resources */,
 				143729502715DDF40062320B /* LaunchScreen.storyboard in Resources */,
-				143729762715E33A0062320B /* lion.jpg in Resources */,
+				1437297F2715FC490062320B /* milk.jpeg in Resources */,
+				1437297D2715FC490062320B /* bacon.jpeg in Resources */,
 				1437294D2715DDF40062320B /* Assets.xcassets in Resources */,
 				1437294B2715DDF30062320B /* Main.storyboard in Resources */,
 			);
