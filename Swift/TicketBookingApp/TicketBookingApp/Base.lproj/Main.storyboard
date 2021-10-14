@@ -110,7 +110,7 @@
                         <viewLayoutGuide key="safeArea" id="RMI-so-aUj"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="QwL-sE-CJa"/>
+                    <navigationItem key="navigationItem" id="0V3-jD-6qV"/>
                     <connections>
                         <outlet property="iv1" destination="mlj-X0-B1m" id="grh-OV-doq"/>
                         <outlet property="nameLabel" destination="ke2-ai-jjS" id="3fS-8D-SgH"/>
@@ -121,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wcw-4M-mhh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1744.8" y="69.715142428785612"/>
+            <point key="canvasLocation" x="1745" y="70"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="Wye-2v-fBI">
