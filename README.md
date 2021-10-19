@@ -85,3 +85,6 @@ A folder for my C files from learning C fundamentals, and will have my future ex
 
 ### Udacity_MLwithAWS
 A folder for exercises completed for an online course for ML tools within AWS
+
+### Swift
+Learning Swift fundamentals and experimenting with iOS App Development
