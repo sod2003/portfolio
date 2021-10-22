@@ -84,7 +84,7 @@ A folder for my JavaScript files and experiments.
 A folder for my C files from learning C fundamentals, and will have my future experiments in the language.
 
 ### Udacity_MLwithAWS
-A folder for exercises completed for an online course for ML tools within AWS
+A folder for exercises completed for an online course for ML tools within AWS.
 
 ### Swift
-Learning Swift fundamentals and experimenting with iOS App Development
+Learning Swift fundamentals and experimenting with iOS App Development, including individual apps to implement concepts as I learn them.
