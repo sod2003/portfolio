@@ -11,10 +11,15 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("SwiftUI Pizza Company")
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             Image("monkey_base")
+                .resizable()
+                .scaledToFit()
             Text("Order pizza")
+                .font(.largeTitle)
             Spacer()
         }
+            .padding()
     }
 }
 
