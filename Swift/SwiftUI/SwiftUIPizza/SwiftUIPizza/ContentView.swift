@@ -10,14 +10,29 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text("SwiftUI Pizza Company")
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-            Image("monkey_base")
-                .resizable()
-                .scaledToFit()
+            ZStack{
+                Image("Surf Board")
+                    .resizable()
+                    .scaledToFit()
+                Text("SwiftUI Pizza Company")
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+            }
+            
+            
             Text("Order pizza")
                 .font(.largeTitle)
             Spacer()
+            HStack(alignment: .top, spacing: 15) {
+                Image("1_100w")
+                Text("Chicken Pizza")
+                Spacer()
+            }
+            Text("Your Order")
+            HStack(alignment: .firstTextBaseline){
+                Text("Your order item here")
+                Spacer()
+                Text("$0.00")
+            }
         }
             .padding()
     }
