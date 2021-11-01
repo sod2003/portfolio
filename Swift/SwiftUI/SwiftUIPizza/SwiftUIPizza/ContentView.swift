@@ -25,7 +25,14 @@ struct ContentView: View {
             List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
                 HStack(alignment: .top, spacing: 15){
                     Image("1_100w")
-                    Text("Chicken Pizza")
+                    VStack {
+                        Text("Chicken Pizza")
+                        HStack {
+                            ForEach(0..<4) {item in
+                                Image("Pizza Slice")
+                            }
+                        }
+                    }
                     Spacer()
                 }
             }
