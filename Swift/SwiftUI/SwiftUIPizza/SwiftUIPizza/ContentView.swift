@@ -21,18 +21,25 @@ struct ContentView: View {
             
             Text("Order pizza")
                 .font(.largeTitle)
-            Spacer()
-            HStack(alignment: .top, spacing: 15) {
-                Image("1_100w")
-                Text("Chicken Pizza")
-                Spacer()
+            Text("Menu")
+            List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
+                HStack(alignment: .top, spacing: 15){
+                    Image("1_100w")
+                    Text("Chicken Pizza")
+                    Spacer()
+                }
             }
             Text("Your Order")
-            HStack(alignment: .firstTextBaseline){
-                Text("Your order item here")
-                Spacer()
-                Text("$0.00")
+            List(0..<5){item in
+                HStack(alignment: .firstTextBaseline){
+                    Text("Your order item here")
+                    Spacer()
+                    Text("$0.00")
+                }
+                
             }
+            
+            Spacer()
         }
             .padding()
     }
