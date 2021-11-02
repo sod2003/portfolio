@@ -16,6 +16,7 @@ struct ContentHeaderView: View {
                     .scaledToFit()
                 Text("SwiftUI Pizza Company")
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.white)
             }
         }
     }
