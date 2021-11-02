@@ -13,7 +13,6 @@ struct OrderListView: View {
             Text("Your Order")
             List(0..<5){item in
                 OrderRowView()
-                
             }
         }
     }
