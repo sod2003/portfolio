@@ -11,7 +11,7 @@ struct MenuRowView: View {
     var body: some View {
         HStack(alignment: .top, spacing: 15){
             Image("1_100w")
-            VStack {
+            VStack(alignment: .leading) {
                 Text("Chicken Pizza")
                     .font(.title)
                     .fontWeight(.light)
