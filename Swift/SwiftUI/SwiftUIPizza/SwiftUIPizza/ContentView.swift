@@ -11,6 +11,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             ContentHeaderView()
+            PageTitleView(title: "Order Pizza")
             MenuListView()
             OrderListView()
             

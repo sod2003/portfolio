@@ -17,10 +17,6 @@ struct ContentHeaderView: View {
                 Text("SwiftUI Pizza Company")
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             }
-            
-            
-            Text("Order pizza")
-                .font(.largeTitle)
         }
     }
 }
@@ -30,3 +26,5 @@ struct ContentHeaderView_Previews: PreviewProvider {
         ContentHeaderView()
     }
 }
+
+

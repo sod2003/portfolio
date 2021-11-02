@@ -13,6 +13,7 @@
 		142FE7AC273184BE00CDDB53 /* OrderRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142FE7AB273184BE00CDDB53 /* OrderRowView.swift */; };
 		142FE7AE2731851900CDDB53 /* MenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142FE7AD2731851900CDDB53 /* MenuRowView.swift */; };
 		142FE7B2273186C100CDDB53 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142FE7B1273186C100CDDB53 /* RatingsView.swift */; };
+		142FE7B4273187BA00CDDB53 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142FE7B3273187BA00CDDB53 /* PageTitleView.swift */; };
 		148A983E272B453600A6D684 /* SwiftUIPizzaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A983D272B453600A6D684 /* SwiftUIPizzaApp.swift */; };
 		148A9840272B453600A6D684 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A983F272B453600A6D684 /* ContentView.swift */; };
 		148A9842272B453600A6D684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 148A9841272B453600A6D684 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		142FE7AB273184BE00CDDB53 /* OrderRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRowView.swift; sourceTree = "<group>"; };
 		142FE7AD2731851900CDDB53 /* MenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowView.swift; sourceTree = "<group>"; };
 		142FE7B1273186C100CDDB53 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
+		142FE7B3273187BA00CDDB53 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		148A983A272B453600A6D684 /* SwiftUIPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		148A983D272B453600A6D684 /* SwiftUIPizzaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPizzaApp.swift; sourceTree = "<group>"; };
 		148A983F272B453600A6D684 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,15 +98,16 @@
 		148A983C272B453600A6D684 /* SwiftUIPizza */ = {
 			isa = PBXGroup;
 			children = (
+				148A983F272B453600A6D684 /* ContentView.swift */,
+				142FE7A92731838700CDDB53 /* ContentHeaderView.swift */,
+				142FE7B3273187BA00CDDB53 /* PageTitleView.swift */,
 				142FE7A42731819100CDDB53 /* OrderView */,
 				142FE7A32731817D00CDDB53 /* MenuView */,
 				142FE7A22731817500CDDB53 /* Model */,
 				142FE7A12731815400CDDB53 /* HistoryView */,
 				148A983D272B453600A6D684 /* SwiftUIPizzaApp.swift */,
-				148A983F272B453600A6D684 /* ContentView.swift */,
 				148A9841272B453600A6D684 /* Assets.xcassets */,
 				148A9843272B453600A6D684 /* Preview Content */,
-				142FE7A92731838700CDDB53 /* ContentHeaderView.swift */,
 			);
 			path = SwiftUIPizza;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				142FE7A8273182F500CDDB53 /* MenuListView.swift in Sources */,
 				148A983E272B453600A6D684 /* SwiftUIPizzaApp.swift in Sources */,
 				142FE7AE2731851900CDDB53 /* MenuRowView.swift in Sources */,
+				142FE7B4273187BA00CDDB53 /* PageTitleView.swift in Sources */,
 				142FE7A62731822700CDDB53 /* OrderListView.swift in Sources */,
 				142FE7B2273186C100CDDB53 /* RatingsView.swift in Sources */,
 			);
