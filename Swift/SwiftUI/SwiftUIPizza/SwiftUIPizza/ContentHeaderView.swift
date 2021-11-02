@@ -15,7 +15,7 @@ struct ContentHeaderView: View {
                     .resizable()
                     .scaledToFit()
                 Text("SwiftUI Pizza Company")
-                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .font(Font.custom("Avinir-Black", size: 20))
                     .foregroundColor(.white)
             }
         }
@@ -25,6 +25,7 @@ struct ContentHeaderView: View {
 struct ContentHeaderView_Previews: PreviewProvider {
     static var previews: some View {
         ContentHeaderView()
+            .environment(\.sizeCategory, .accessibilityExtraExtraLarge)
     }
 }
 

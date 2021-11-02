@@ -13,9 +13,11 @@ struct MenuRowView: View {
             Image("1_100w")
             VStack {
                 Text("Chicken Pizza")
+                    .font(.title)
+                    .fontWeight(.light)
                 RatingsView()
             }
-            Spacer()
+            //Spacer()
         }
     }
 }
