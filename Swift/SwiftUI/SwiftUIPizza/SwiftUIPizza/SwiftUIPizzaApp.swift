@@ -12,6 +12,7 @@ struct SwiftUIPizzaApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView(orderModel: OrderModel())
+                .environmentObject(UserPreferences())
         }
     }
 }
