@@ -11,7 +11,9 @@ import SwiftUI
 struct SwiftUIPizzaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(orderModel: OrderModel())
+//            ContentView(orderModel: OrderModel())
+//                .environmentObject(UserPreferences())
+            RootTabView()
                 .environmentObject(UserPreferences())
         }
     }
