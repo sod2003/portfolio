@@ -13,13 +13,14 @@ struct ConfirmView: View {
     @Binding var isPresented:Bool
     @ObservedObject var orderModel:OrderModel
     @Binding var quantity:Int
+    @Binding var size:Size
     ///extracts the menu item name based on `menuID`
     var name:String{
         orderModel.menu(menuID)?.name ?? ""
     }
     
     func addItem(){
-        orderModel.add(menuID: menuID, quantity: quantity)
+        orderModel.add(menuID: menuID, size: size, quantity: quantity)
         isPresented = false
     }
     
@@ -33,7 +34,7 @@ struct ConfirmView: View {
             SelectedImageView(image: "\(menuID)_250w")
                 .padding(10)
             Divider()
-            Text("Confirm your order of \(quantity) \(name) pizza")
+            Text("Confirm your order of \(quantity) \(size.formatted()) \(name) pizza")
                 .font(.headline)
             Spacer()
             Button(action: addItem){
@@ -52,6 +53,6 @@ struct ConfirmView: View {
 
 struct ConfirmView_Previews: PreviewProvider {
     static var previews: some View {
-        ConfirmView(menuID: 0, isPresented: .constant(true), orderModel: OrderModel(), quantity: .constant(1))
+        ConfirmView(menuID: 0, isPresented: .constant(true), orderModel: OrderModel(), quantity: .constant(1), size: .constant(Size.small))
     }
 }
