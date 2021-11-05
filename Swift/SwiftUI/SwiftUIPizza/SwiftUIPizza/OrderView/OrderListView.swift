@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct OrderListView: View {
-    var orderModel:OrderModel
+    @ObservedObject var orderModel:OrderModel
     var body: some View {
         VStack {
             ListHeaderView(orderModel: orderModel, text: "Your Order")
