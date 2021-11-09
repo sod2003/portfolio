@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1422238B273B1AAD00A0F6AD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1422238A273B1AAD00A0F6AD /* MapView.swift */; };
 		142FE7A62731822700CDDB53 /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142FE7A52731822700CDDB53 /* OrderListView.swift */; };
 		142FE7A8273182F500CDDB53 /* MenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142FE7A7273182F500CDDB53 /* MenuListView.swift */; };
 		142FE7AA2731838700CDDB53 /* ContentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142FE7A92731838700CDDB53 /* ContentHeaderView.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1422238A273B1AAD00A0F6AD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		142FE7A52731822700CDDB53 /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
 		142FE7A7273182F500CDDB53 /* MenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListView.swift; sourceTree = "<group>"; };
 		142FE7A92731838700CDDB53 /* ContentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentHeaderView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		142FE7A12731815400CDDB53 /* HistoryView */ = {
 			isa = PBXGroup;
 			children = (
+				1422238A273B1AAD00A0F6AD /* MapView.swift */,
 				142FE7B527318B6400CDDB53 /* PizzaHistoryView.swift */,
 				142FE7B9273191B300CDDB53 /* HistoryListView.swift */,
 				142FE7B72731911F00CDDB53 /* HistoryRowView.swift */,
@@ -235,6 +238,7 @@
 				1431055A2735803D009CD78C /* RootTabView.swift in Sources */,
 				143E5DD627346DE70033C3BF /* HistoryDetailView.swift in Sources */,
 				142FE7A8273182F500CDDB53 /* MenuListView.swift in Sources */,
+				1422238B273B1AAD00A0F6AD /* MapView.swift in Sources */,
 				148A983E272B453600A6D684 /* SwiftUIPizzaApp.swift in Sources */,
 				142FE7AE2731851900CDDB53 /* MenuRowView.swift in Sources */,
 				143423F0273321A600EE0D32 /* OrderModel.swift in Sources */,
