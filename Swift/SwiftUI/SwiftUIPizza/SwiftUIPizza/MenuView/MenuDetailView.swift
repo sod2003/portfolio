@@ -103,7 +103,7 @@ struct QuantityStepperView: View {
         Stepper(value: $quantity, in: 1...10){
             Text("Quantity \(quantity)")
         }
-            .padding()
+        .padding()
     }
 }
 
