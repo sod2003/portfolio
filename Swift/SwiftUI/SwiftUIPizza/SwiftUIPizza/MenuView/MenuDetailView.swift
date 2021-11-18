@@ -30,15 +30,13 @@ struct MenuDetailView: View {
     }
     
     func titleView()->some View{
-        return
-        
-        GeometryReader{ geometry in
-            
+        return GeometryReader{ geometry in
             HStack{
                 SelectedImageView(image: "\(self.menuItem.id)_250w")
                     .padding(5)
                 Text(self.menuItem.description)
                     .frame(width: geometry.size.width * 2/5)
+                    .font(geometry.size.height >  200 ? .body : .caption)
                     .padding()
                 Spacer()
             }
@@ -63,7 +61,7 @@ struct MenuDetailView: View {
                     Button(action: self.addItem) {
                         Text("Add to order")
                         
-                            .font(.title)
+                            .font(isCompactPortrait(geo: geo) ? staticFont : .title)
                             .fontWeight(.bold)
                             .padding([.leading, .trailing])
                             .background(Color("G3"))
@@ -94,6 +92,8 @@ struct MenuDetailView: View {
 struct MenuDetailView_Previews: PreviewProvider {
     static var previews: some View {
         MenuDetailView(orderModel: OrderModel(), menuItem: testMenuItem)
+            .environmentObject(UserPreferences())
+.previewInterfaceOrientation(.portrait)
     }
 }
 
