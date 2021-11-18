@@ -55,17 +55,17 @@ struct ConfirmView: View {
                 Button(action: addItem){
                     Text("Add")
                         .font(.title)
-                    .padding()
-                    .background(Color("G4"))
-                    .cornerRadius(10)
+                        .padding()
+                        .background(Color("G4"))
+                        .cornerRadius(10)
                 }.padding([.bottom])
                 Spacer()
                 Button(action: {self.isPresented = false}){
                     Text("Cancel")
                         .font(.title)
                         .padding()
-                    .background(Color("G4"))
-                    .cornerRadius(10)
+                        .background(Color("G4"))
+                        .cornerRadius(10)
                 }.padding([.bottom])
             }.padding()
         }
