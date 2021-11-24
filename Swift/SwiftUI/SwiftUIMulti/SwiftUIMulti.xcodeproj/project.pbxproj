@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47422A7D274ED7FB0031E1B1 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47422A7C274ED7FB0031E1B1 /* PageTitleView.swift */; };
+		47422A7E274ED7FB0031E1B1 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47422A7C274ED7FB0031E1B1 /* PageTitleView.swift */; };
 		475E92CC274854BA0098ADC1 /* SwiftUIMultiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475E92BC274854B80098ADC1 /* SwiftUIMultiApp.swift */; };
 		475E92CD274854BA0098ADC1 /* SwiftUIMultiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475E92BC274854B80098ADC1 /* SwiftUIMultiApp.swift */; };
 		475E92D0274854BA0098ADC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 475E92BE274854BA0098ADC1 /* Assets.xcassets */; };
@@ -16,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47422A7C274ED7FB0031E1B1 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		475E92BC274854B80098ADC1 /* SwiftUIMultiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMultiApp.swift; sourceTree = "<group>"; };
 		475E92BE274854BA0098ADC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		475E92C3274854BA0098ADC1 /* SwiftUIMulti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMulti.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +59,7 @@
 			children = (
 				475E92BC274854B80098ADC1 /* SwiftUIMultiApp.swift */,
 				47FEC784274D9FFE00CC5757 /* ListHeaderView.swift */,
+				47422A7C274ED7FB0031E1B1 /* PageTitleView.swift */,
 				475E92BE274854BA0098ADC1 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -176,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47422A7D274ED7FB0031E1B1 /* PageTitleView.swift in Sources */,
 				475E92CC274854BA0098ADC1 /* SwiftUIMultiApp.swift in Sources */,
 				47FEC785274D9FFE00CC5757 /* ListHeaderView.swift in Sources */,
 			);
@@ -185,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47422A7E274ED7FB0031E1B1 /* PageTitleView.swift in Sources */,
 				475E92CD274854BA0098ADC1 /* SwiftUIMultiApp.swift in Sources */,
 				47FEC786274D9FFE00CC5757 /* ListHeaderView.swift in Sources */,
 			);
