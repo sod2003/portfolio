@@ -11,8 +11,8 @@ import SwiftUI
 struct SwiftUIMultiApp: App {
     var body: some Scene {
         WindowGroup {
-//            ContentView(orderModel: OrderModel())
-//                .environmentObject(UserPreferences())
+            ContentView(orderModel: OrderModel())
+                .environmentObject(UserPreferences())
         }
     }
 }
