@@ -15,17 +15,25 @@ struct MenuListView: View {
         VStack {
             ListHeaderView(orderModel:orderModel,text:"Menu")
             NavigationView{
+                #if os(macOS)
                 List(menuList) { item in
                     NavigationLink(destination:MenuDetailView(orderModel:self.orderModel,menuItem:item)){
                         MenuRowView(menuItem: item)
                             .listRowInsets(EdgeInsets())
                     }
                 }
-            .navigationBarTitle("Pizza Order")
+                #else
+                List(menuList) { item in
+                    NavigationLink(destination:MenuDetailView(orderModel:self.orderModel,menuItem:item)){
+                        MenuRowView(menuItem: item)
+                            .listRowInsets(EdgeInsets())
+                    }
+                }
+                .navigationBarTitle("Pizza Order")
+                #endif
             }
         }
     }
-}
 
 struct MenuListView_Previews: PreviewProvider {
     static var previews: some View {
