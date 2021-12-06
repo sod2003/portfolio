@@ -34,6 +34,7 @@ struct MenuListView: View {
             }
         }
     }
+}
 
 struct MenuListView_Previews: PreviewProvider {
     static var previews: some View {
