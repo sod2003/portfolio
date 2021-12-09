@@ -2,8 +2,7 @@
 //  ContentView.swift
 //  HuliPizza
 //
-//  Created by Steven Lipton on 9/16/19.
-//  Copyright © 2019 Steven Lipton. All rights reserved.
+//  Created by Sean O'Dowd on 11/19/2021.
 //
 
 import SwiftUI
