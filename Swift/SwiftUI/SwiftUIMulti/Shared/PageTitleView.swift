@@ -4,7 +4,7 @@
 //
 //  Created by Steven Lipton on 9/16/19.
 //  Copyright © 2019 Steven Lipton. All rights reserved.
-//
+//  Edited by Sean O'Dowd on 12/16/21.
 
 import SwiftUI
 
@@ -25,7 +25,7 @@ struct PageTitleView: View {
         }.overlay(
             Image(systemName: "chevron.up.square")
                 .rotationEffect(isDisplayingOrders ?? false ? Angle(degrees:0.0) : Angle(degrees:180.0))
-                .animation(.easeInOut(duration: 0.5))
+                .animation(.easeInOut(duration: 0.5), value: true)
                 .font(sizeClass != .compact ? .title : staticFont)
                 .foregroundColor(isDisplayingOrders != nil ? Color("G1") : .clear)
             .padding()
