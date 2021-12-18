@@ -24,8 +24,7 @@ struct ContentView: View {
                 .animation(.spring(), value: true)
             //Spacer()
         }
-        
-            .padding()
+        .padding()
     }
 }
 
