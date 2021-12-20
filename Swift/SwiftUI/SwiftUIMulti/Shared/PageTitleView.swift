@@ -11,14 +11,15 @@ import SwiftUI
 let staticFont = Font.system(size:22)
 
 struct PageTitleView: View {
-    @Environment(\.verticalSizeClass) var sizeClass
+    //@Environment(\.verticalSizeClass) var sizeClass
     var title:String
     var isDisplayingOrders:Bool! = nil
+    var isCompact:Bool = false
     var body: some View {
         HStack {
             Spacer()
             Text(title)
-                .font(sizeClass != .compact ? .largeTitle : staticFont)
+                .font(!isCompact ? .largeTitle : staticFont)
                 .fontWeight(.heavy)
                 .padding(.trailing)
            
@@ -26,7 +27,7 @@ struct PageTitleView: View {
             Image(systemName: "chevron.up.square")
                 .rotationEffect(isDisplayingOrders ?? false ? Angle(degrees:0.0) : Angle(degrees:180.0))
                 .animation(.easeInOut(duration: 0.5), value: true)
-                .font(sizeClass != .compact ? .title : staticFont)
+                .font(!isCompact ? .title : staticFont)
                 .foregroundColor(isDisplayingOrders != nil ? Color("G1") : .clear)
             .padding()
             ,alignment: .leading

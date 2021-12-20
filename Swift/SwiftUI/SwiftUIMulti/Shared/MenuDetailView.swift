@@ -51,11 +51,11 @@ struct MenuDetailView: View {
     
     
     
-    func menuOptionsView()-> some View{
+    func menuOptionsView(geo: GeometryProxy)-> some View{
        return  VStack{
             SizePickerView(size:$settings.size)
             QuantityStepperView(quantity:$quantity)
-            PageTitleView(title: "Order:  \(formattedPrice)")
+            PageTitleView(title: "Order:  \(formattedPrice)", isCompact: isCompactPortrait(geo: geo))
             Spacer()
         }
     }
@@ -65,7 +65,7 @@ struct MenuDetailView: View {
         GeometryReader{ geo in
             VStack {
                 HStack{
-                    PageTitleView(title: self.menuItem.name)
+                    PageTitleView(title: self.menuItem.name, isCompact: isCompactPortrait(geo: geo))
                     Button(action: self.addItem) {
                         Text("Add to order")
                             
@@ -83,12 +83,12 @@ struct MenuDetailView: View {
                 if isCompactPortrait(geo: geo){
                     HStack{
                         self.titleView()
-                        self.menuOptionsView()
+                        self.menuOptionsView(geo: geo)
                     }
                 } else {
                     VStack{
                         self.titleView()
-                        self.menuOptionsView()
+                        self.menuOptionsView(geo: geo)
                     }
                 }
                 
@@ -102,6 +102,7 @@ struct MenuDetailView: View {
 struct MenuDetailView_Previews: PreviewProvider {
     static var previews: some View {
         MenuDetailView(orderModel:OrderModel(),menuItem: testMenuItem)
+            .environmentObject(UserPreferences())
     }
 }
 
