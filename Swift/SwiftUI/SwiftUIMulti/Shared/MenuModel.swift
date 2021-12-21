@@ -5,7 +5,7 @@
 //  Modified by Steven Lipton on 12/26/20.
 // Added desserts and Recursive search 
 //  Copyright © 2019 Steven Lipton. All rights reserved.
-//
+// Modified by Sean O'Dowd 12/21/21.
 
 import Foundation
 
@@ -26,6 +26,7 @@ struct MenuItem:Identifiable{
     var price:Double = 0.00
     var rating:Int = 0
     var type:MenuItemType = .pizza
+    var children:[MenuItem]? = nil
 }
 
 let testMenuItem =  MenuItem(id:1, name: "Huli Chicken", description: "Our original Hawaiian street food pizza, with Huli Huli chicken, onions, ginger, crushed macadamia nuts, tomato sauce, and cheese on a classic crust.", price: 14.00, rating: 6)
@@ -33,7 +34,7 @@ let testMenuItem =  MenuItem(id:1, name: "Huli Chicken", description: "Our origi
 
 struct MenuModel{
      var menu:[MenuItem] = [
-        MenuItem(id: 100, name: "Pizza", type: .title),
+        MenuItem(id: 100, name: "Pizza", type: .title, children: [
         MenuItem(id: 0,
                  name: "Margherita",
                  description: "The classic pizza of Buffalo Mozzarella, tomatoes, and basil on a classic crust.",
@@ -92,8 +93,8 @@ struct MenuModel{
                  description: "It may be from the mainland, but we make it our own. Pineapple, SPAM, cheese, onions, and tomato sauce on a thin crust.",
                  price: 14.00,
                  rating: 5,
-                 type:.pizza),
-        MenuItem(id: 200, name: "Dessert", type: .title),
+                 type:.pizza)]),
+        MenuItem(id: 200, name: "Dessert", type: .title, children: [
         MenuItem(id:21,
                  name:"ChocoMac Tart",
                  description:"Chocolate Cream with macadamias topped with wipped cream and locally sourced chocolate shavings",
@@ -141,7 +142,7 @@ struct MenuModel{
                  description:"Your choice of ice cream between two of our chocolate chip cookies",
                  price: 8.95,
                  rating:5,
-                 type:.dessert)
+                 type:.dessert)])
     ]
 // a basic recursive function
 // factorial 5 = 5*4*3*2*1  whihc is the same as 5*(4*(3*(2*(1))))
