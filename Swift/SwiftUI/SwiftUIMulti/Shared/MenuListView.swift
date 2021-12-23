@@ -16,17 +16,28 @@ struct MenuListView: View {
             ListHeaderView(orderModel:orderModel,text:"Menu")
             NavigationView{
                 #if os(macOS)
-                List(menuList) { item in
-                    NavigationLink(destination:MenuDetailView(orderModel:self.orderModel,menuItem:item)){
-                        MenuRowView(menuItem: item)
-                            .listRowInsets(EdgeInsets())
+                List(menuList, children: \.children) { item in
+                    if item.type != .title {
+                        NavigationLink(destination:MenuDetailView(orderModel:self.orderModel,menuItem:item)) {
+                            MenuRowView(menuItem: item)
+                                .listRowInsets(EdgeInsets())
+                        }
+                    } else {
+                        Text(item.name)
                     }
                 }
                 #else
-                List(menuList) { item in
-                    NavigationLink(destination:MenuDetailView(orderModel:self.orderModel,menuItem:item)){
-                        MenuRowView(menuItem: item)
-                            .listRowInsets(EdgeInsets())
+                //List(menuList, children: \.children) { item in
+                List {
+                    OutlineGroup(menuList, children: \.children) { item in
+                        if item.type != .title {
+                            NavigationLink(destination:MenuDetailView(orderModel:self.orderModel,menuItem:item)) {
+                                MenuRowView(menuItem: item)
+                                    .listRowInsets(EdgeInsets())
+                            }
+                        } else {
+                            Text(item.name)
+                        }
                     }
                 }
                 .navigationBarTitle("Pizza Order")
