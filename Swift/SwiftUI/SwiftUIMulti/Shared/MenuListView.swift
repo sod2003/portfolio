@@ -27,19 +27,20 @@ struct MenuListView: View {
                     }
                 }
                 #else
+                GridNavigationView(orderModel: orderModel)
                 //List(menuList, children: \.children) { item in
-                List {
-                    OutlineGroup(menuList, children: \.children) { item in
-                        if item.type != .title {
-                            NavigationLink(destination:MenuDetailView(orderModel:self.orderModel,menuItem:item)) {
-                                MenuRowView(menuItem: item)
-                                    .listRowInsets(EdgeInsets())
-                            }
-                        } else {
-                            Text(item.name)
-                        }
-                    }
-                }
+//                List {
+//                    OutlineGroup(menuList, children: \.children) { item in
+//                        if item.type != .title {
+//                            NavigationLink(destination:MenuDetailView(orderModel:self.orderModel,menuItem:item)) {
+//                                MenuRowView(menuItem: item)
+//                                    .listRowInsets(EdgeInsets())
+//                            }
+//                        } else {
+//                            Text(item.name)
+//                        }
+//                    }
+//                }
                 .navigationBarTitle("Pizza Order")
                 #endif
             }

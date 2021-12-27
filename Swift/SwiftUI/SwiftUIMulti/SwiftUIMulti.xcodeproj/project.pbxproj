@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4719DFBB277A12780002F867 /* GridNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4719DFBA277A12780002F867 /* GridNavigationView.swift */; };
+		4719DFBC277A12780002F867 /* GridNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4719DFBA277A12780002F867 /* GridNavigationView.swift */; };
 		47422A7D274ED7FB0031E1B1 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47422A7C274ED7FB0031E1B1 /* PageTitleView.swift */; };
 		47422A7E274ED7FB0031E1B1 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47422A7C274ED7FB0031E1B1 /* PageTitleView.swift */; };
 		475E92CC274854BA0098ADC1 /* SwiftUIMultiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475E92BC274854B80098ADC1 /* SwiftUIMultiApp.swift */; };
@@ -44,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4719DFBA277A12780002F867 /* GridNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridNavigationView.swift; sourceTree = "<group>"; };
 		47422A7C274ED7FB0031E1B1 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		475E92BC274854B80098ADC1 /* SwiftUIMultiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMultiApp.swift; sourceTree = "<group>"; };
 		475E92BE274854BA0098ADC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -135,6 +138,7 @@
 				47EA44BA275844180099EE8F /* MenuListView.swift */,
 				47EA44BC275844180099EE8F /* MenuRowView.swift */,
 				47EA44F2275849E60099EE8F /* RatingsView.swift */,
+				4719DFBA277A12780002F867 /* GridNavigationView.swift */,
 			);
 			name = MenuView;
 			sourceTree = "<group>";
@@ -266,6 +270,7 @@
 				47EA44F0275847F10099EE8F /* SelectedImageView.swift in Sources */,
 				475E92CC274854BA0098ADC1 /* SwiftUIMultiApp.swift in Sources */,
 				47EA44CE275844BB0099EE8F /* MenuModel.swift in Sources */,
+				4719DFBB277A12780002F867 /* GridNavigationView.swift in Sources */,
 				47EA44D0275844BB0099EE8F /* HistoryModel.swift in Sources */,
 				47EA44C2275844180099EE8F /* ConfirmView.swift in Sources */,
 				47EA44B5275843CB0099EE8F /* ContentView.swift in Sources */,
@@ -289,6 +294,7 @@
 				47EA44F1275847F10099EE8F /* SelectedImageView.swift in Sources */,
 				475E92CD274854BA0098ADC1 /* SwiftUIMultiApp.swift in Sources */,
 				47EA44CF275844BB0099EE8F /* MenuModel.swift in Sources */,
+				4719DFBC277A12780002F867 /* GridNavigationView.swift in Sources */,
 				47EA44D1275844BB0099EE8F /* HistoryModel.swift in Sources */,
 				47EA44C3275844180099EE8F /* ConfirmView.swift in Sources */,
 				47EA44B6275843CB0099EE8F /* ContentView.swift in Sources */,
