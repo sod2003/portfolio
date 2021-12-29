@@ -9,7 +9,12 @@ import Combine
 
 
 //(1) Create a new publisher operator, to square each value, using `map()`
-
+[1,3,8]
+    .publisher
+    .map { $0 * $0 }
+    .sink {
+        print($0)
+    }
 
 //(2) Use `decode()` with `map()` to convert a REST respones to an object
 let url = URL(string: "https://jsonplaceholder.typicode.com/posts")!
@@ -20,3 +25,12 @@ struct Task: Decodable {
     let userId: Int
     let body: String
 }
+let dataPublisher = URLSession.shared.dataTaskPublisher(for: url)
+    .map { $0.data }
+    .decode(type: [Task].self, decoder: JSONDecoder())
+let cancellableSink = dataPublisher
+    .sink(receiveCompletion: { completion in
+        print(completion)
+    }, receiveValue: {items in
+        print("Results \(items[0].title)")
+    })
