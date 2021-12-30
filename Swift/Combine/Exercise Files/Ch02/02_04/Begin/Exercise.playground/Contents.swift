@@ -11,3 +11,11 @@ import SwiftUI
 
 
 //(1) Create a new Just publisher, map some text as prefix, and assign to label.
+[1, 4, 8]
+    .publisher
+    .sink {print($0)}
+
+let label = UILabel()
+Just("John")
+    .map {"My name is \($0)"}
+    .assign(to: \.text, on: label)
