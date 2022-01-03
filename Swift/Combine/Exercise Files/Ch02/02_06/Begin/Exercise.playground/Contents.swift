@@ -24,3 +24,18 @@ enum FutureError: Error{
     case notMultiple
 }
 
+let future = Future<String, FutureError> { promise in
+    let calendar = Calendar.current
+    let second = calendar.component(.second, from: Date())
+    print("Second is \(second)")
+    if second.isMultiple(of: 3){
+        promise(.success("We are successful: \(second)"))
+    }else{
+        promise(.failure(.notMultiple))
+    }
+}.catch{ error in
+    Just("Caught an error")
+}
+.eraseToAnyPublisher()
+.delay(for: .init(1), scheduler: RunLoop.main)
+.sink(receiveCompletion: {print($0)}, receiveValue: {print($0)})
