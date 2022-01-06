@@ -30,6 +30,15 @@ let publisher = URLSession.shared.dataTaskPublisher(for: url!)
 
 //(2) Subscribe to the publisher with `mapError` Error handling
 let cancellableSink = publisher
+    .retry(2)
+    .mapError{ error -> Error in
+        switch error{
+        case URLError.cannotFindHost:
+            return APIError.networkError(error: error.localizedDescription)
+        default:
+            return APIError.responseError(error: error.localizedDescription)
+        }
+    }
     .sink(receiveCompletion: {completion in
         print(String(describing: completion))
     }, receiveValue: {value in
@@ -37,6 +46,13 @@ let cancellableSink = publisher
     })
 
 //(3) A simple Publisher example with `.tryMap` and `.catch`
-
+Just(7)
+    .tryMap { _ in
+        throw APIError.unknownError
+    }
+    .catch { result in
+        Just(2)
+    }
+    .sink { print($0)}
 
 
