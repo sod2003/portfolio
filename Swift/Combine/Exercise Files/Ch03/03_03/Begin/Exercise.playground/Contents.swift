@@ -15,7 +15,18 @@ class MyTests : XCTestCase {
     let expectedId = 1
     
     func testPublisher() {
-
+        let _ = APIService.getPosts()
+            .sink(receiveCompletion: { completion in
+                print("Completed subscription \(String(describing: completion))")
+            }, receiveValue: { results in
+                print("Got \(results.count) posts back")
+                XCTAssert(results.count > 0)
+                XCTAssert(results.count == 100,
+                          "We got \(results.count) instead of 100 posts back")
+                XCTAssert(results[0].title == self.expectedTitle,
+                          "We got back \(results[0].title) instead of \(self.expectedTitle)")
+            })
+            .store(in: &subscriptions)
     }
 }
 
