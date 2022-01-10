@@ -26,7 +26,8 @@ let publisher = URLSession.shared.dataTaskPublisher(for: url!)
     //.subscribe(on: queue)
 
 let cancellableSink = publisher
-    .receive(on: DispatchQueue.main)
+    .subscribe(on: DispatchQueue(label: "A queue"))
+//    .receive(on: DispatchQueue.main)
     //.receive(on: DispatchQueue.global)
     .sink(receiveCompletion: {completion in
         print("Subscriber: On main thread?: \(Thread.current.isMainThread)")
