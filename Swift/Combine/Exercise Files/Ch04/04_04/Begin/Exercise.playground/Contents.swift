@@ -22,6 +22,7 @@ let publisher = URLSession.shared.dataTaskPublisher(for: url!)
     .map {$0.data}
     .decode(type: Array<Post>.self, decoder: JSONDecoder())
 //(1) Add `.eraseToAnyPublisher()`
+    .eraseToAnyPublisher()
 
 let cancellableSink = publisher
     .sink(receiveCompletion: {completion in
