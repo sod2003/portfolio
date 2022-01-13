@@ -12,7 +12,26 @@ let numberPublisher = (0...100)
     .publisher
 
 // (1) Set a delay of 3 seconds before retrieving data
-
+    .delay(for: 3.0, scheduler: queue)
 // (2) Create a custom Subscriber that implements Backpressure.
-
+final class customSubscriber: Subscriber{
+    
+    func receive(subscription: Subscription) {
+        subscription.request(.unlimited)
+    }
+    
+    func receive(_ input: Int) -> Subscribers.Demand {
+        print("Number: \(input)")
+        return .none
+    }
+    
+    func receive(completion: Subscribers.Completion<Never>) {
+        print("Subscription \(completion)")
+    }
+    
+    typealias Input = Int
+    typealias Failure = Never
+}
+let customSubscription = customSubscriber()
+numberPublisher.subscribe(customSubscription)
 
