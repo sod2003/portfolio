@@ -16,6 +16,9 @@ let numberPublisher = (0...100)
 // (2) Create a custom Subscriber that implements Backpressure.
 final class customSubscriber: Subscriber{
     
+    typealias Input = Int
+    typealias Failure = Never
+    
     func receive(subscription: Subscription) {
         subscription.request(.unlimited)
     }
@@ -28,9 +31,6 @@ final class customSubscriber: Subscriber{
     func receive(completion: Subscribers.Completion<Never>) {
         print("Subscription \(completion)")
     }
-    
-    typealias Input = Int
-    typealias Failure = Never
 }
 let customSubscription = customSubscriber()
 numberPublisher.subscribe(customSubscription)
