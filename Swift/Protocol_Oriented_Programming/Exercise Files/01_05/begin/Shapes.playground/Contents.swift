@@ -1,7 +1,5 @@
 import Foundation
 
-import Foundation
-
 protocol Shape {
     var area: Double { get }
 }
@@ -39,4 +37,27 @@ struct Circle: Shape {
     var area: Double {
         return .pi * radius * radius
     }
+}
+
+var shape: Shape
+
+shape = Rectangle(width: 10, height: 20)
+print(shape.area)
+
+shape = Circle(radius: 10)
+print(shape.area)
+
+shape = Rhombus(d1: 4, d2: 6)
+print(shape.area)
+
+var shapes = [Shape]()
+
+let square = Square(side: 5)
+shapes.append(square)
+
+let circle = Circle(radius: 3)
+shapes.append(circle)
+
+for shape in shapes {
+    print(shape.area)
 }
