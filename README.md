@@ -87,4 +87,4 @@ A folder for my C files from learning C fundamentals, and will have my future ex
 A folder for exercises completed for an online course for ML tools within AWS.
 
 ### Swift
-Learning Swift fundamentals and experimenting with iOS App Development, including individual apps to implement concepts as I learn them. Learning advanced topics in Swift like Protocol-orienting Programming(POP) and Combine.
+Learning Swift fundamentals and experimenting with iOS App Development, including individual apps to implement concepts as I learn them. Learning advanced topics in Swift like Protocol-Orienting Programming(POP) and Combine.
