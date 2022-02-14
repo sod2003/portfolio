@@ -1,6 +1,5 @@
 import Foundation
 
-
 /**
  Generics - Chapter Challenge
  
@@ -14,8 +13,6 @@ import Foundation
  - `count`: returns the number of elements in the stack
  - `isEmpty`: returns a Boolean value indicating whether the stack has no elements
  
- 
- 
  Hints:
  - Start by defining the protocol.
  - The `count` and `isEmpty` properties should be readonly.
@@ -23,4 +20,50 @@ import Foundation
  - You can use an array as underlying storage.
  */
 
+public protocol Stackable {
+    associatedtype T
+    
+    var count: Int { get }
+    
+    mutating func push(_ element: T)
+    
+    mutating func pop() -> T?
+    
+    func peek() -> T?
+    
+    var isEmpty: Bool { get }
+}
 
+public struct Stack<T>: Stackable {
+    private var storage = [T]()
+    
+    public var count: Int {
+        storage.count as Int
+    }
+    
+    public mutating func push(_ element: T) {
+        storage.append(element)
+    }
+    
+    public mutating func pop() -> T? {
+        storage.popLast()
+    }
+    
+    public func peek() -> T? {
+        storage.last
+    }
+    
+    public var isEmpty: Bool {
+        storage.isEmpty
+    }
+}
+
+var stringStack = Stack<String>()
+stringStack.push("Sup")
+stringStack.push("Hello")
+print(stringStack.pop() ?? "empty")
+print(stringStack.peek() ?? "empty")
+print(stringStack.count)
+stringStack.pop()
+print(stringStack.count)
+print(stringStack.isEmpty)
