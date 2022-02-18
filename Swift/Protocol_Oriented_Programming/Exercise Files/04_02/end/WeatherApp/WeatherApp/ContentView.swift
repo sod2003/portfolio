@@ -15,9 +15,7 @@ struct ContentView: View {
         VStack {
             TextField("Enter City", text: $input)
                 .font(.title)
-            
             Divider()
-            
             Text(input)
                 .font(.body)
         }.padding()
