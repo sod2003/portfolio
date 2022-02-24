@@ -4,13 +4,12 @@
 //
 //  Created by Nyisztor, Karoly on 11/9/19.
 //  Copyright © 2019 Nyisztor, Karoly. All rights reserved.
-//
 
 import Foundation
 
 public protocol WebServiceController {
     func fetchWeatherData(for city: String,
-                          completionHandler: (String?, WebServiceControllerError?) -> Void)
+                        completionHandler: @escaping (String?, WebServiceControllerError?) -> Void)
 }
 
 // MARK: - WebServiceControllerError
