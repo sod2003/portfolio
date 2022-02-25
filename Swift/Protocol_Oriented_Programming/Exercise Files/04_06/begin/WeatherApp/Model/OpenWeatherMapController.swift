@@ -9,10 +9,8 @@
 import Foundation
 
 //!!! Get your own API key at http://openweathermap.org
-// You'll need to sign up first, but the process is straightforward - see https://openweathermap.org/guide#how.
-// After registration, it takes a couple of hours until the API key gets activated.
 private enum API {
-    static let key = "f93596170efbdda49dfe5f361287f6fa"
+    static let key = ""
 }
 
 
@@ -28,18 +26,36 @@ final class OpenWeatherMapController: WebServiceController {
             return
         }
         
-        let dataTask = URLSession.shared.dataTask(with: endpointURL, completionHandler: { (data, response, error) -> Void in
+        let dataTask = URLSession.shared.dataTask(with: endpointURL, completionHandler: { (data, response, error) in
             guard error == nil else {
                 completionHandler(nil, WebServiceControllerError.forwarded(error!))
                 return
             }
+            
             guard let responseData = data else {
                 completionHandler(nil, WebServiceControllerError.invalidPayload(endpointURL))
                 return
             }
             
-            // ...to be continued
+            // Decoding the JSON data
+            let decoder = JSONDecoder()
+            do {
+                let weatherList = try decoder.decode(OpenWeatherMapContainer.self, from: responseData)
+                guard let weatherInfo = weatherList.list?.first,
+                      let weather = weatherInfo.weather.first?.main,
+                      let temperature = weatherInfo.main.temp else {
+                          completionHandler(nil, WebServiceControllerError.invalidPayload(endpointURL))
+                      return
+                      }
+                
+                // Displaying the Weather Information
+                let weatherDescription = "\(weather) \(temperature) °F"
+                completionHandler(weatherDescription, nil)
+            } catch let error {
+                completionHandler(nil, WebServiceControllerError.forwarded(error))
+            }
         })
         
+        dataTask.resume()
     }
 }
