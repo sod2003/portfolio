@@ -14,6 +14,13 @@ private enum API {
 }
 
 final class WeatherStackController: WebServiceController {
+    
+    var fallbackService: WebServiceController?
+    
+    init(fallbackService: WebServiceController? = nil) {
+        self.fallbackService = fallbackService
+    }
+    
     func fetchWeatherData(for city: String, completionHandler: @escaping (String?, WebServiceControllerError?) -> Void) {
         let endpoint = "http://api.weatherstack.com/current?access_key=\(API.key)&query=\(city)&units=f"
         
@@ -27,12 +34,20 @@ final class WeatherStackController: WebServiceController {
         
         let dataTask = URLSession.shared.dataTask(with: endpointURL, completionHandler: { (data, response, error) -> Void in
             guard error == nil else {
-                // we wrap the error in our dedicated error type and pass it back to the caller
-                completionHandler(nil, WebServiceControllerError.forwarded(error!))
+                if let fallback = self.fallbackService {
+                    fallback.fetchWeatherData(for: city, completionHandler: completionHandler)
+                } else {
+                    completionHandler(nil, WebServiceControllerError.forwarded(error!))
+                }
                 return
             }
+            
             guard let responseData = data else {
-                completionHandler(nil, WebServiceControllerError.invalidPayload(endpointURL))
+                if let fallback = self.fallbackService {
+                    fallback.fetchWeatherData(for: city, completionHandler: completionHandler)
+                } else {
+                    completionHandler(nil, WebServiceControllerError.invalidPayload(endpointURL))
+                }
                 return
             }
             

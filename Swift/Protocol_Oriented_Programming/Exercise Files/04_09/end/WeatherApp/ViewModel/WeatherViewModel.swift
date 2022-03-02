@@ -15,7 +15,7 @@ import Foundation
 class WeatherViewModel: ObservableObject {
     @Published var weatherInfo = ""
     
-    private let weatherService = OpenWeatherMapController()
+    private let weatherService = OpenWeatherMapController(fallbackService: WeatherStackController())
         
     func fetch(city: String) {
         weatherService.fetchWeatherData(for: city, completionHandler: { (info, error) in
