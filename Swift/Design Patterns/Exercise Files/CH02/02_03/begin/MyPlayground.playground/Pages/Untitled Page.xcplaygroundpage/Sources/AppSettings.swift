@@ -5,7 +5,9 @@ final public class AppSettings {
     public static let shared = AppSettings()
     private var settings: [String: Any] = ["Theme": "Dark", "MaxConcurrentDownloads": 4]
     
-    private init() {}
+    private init() {
+        print("AppSettings initialized")
+    }
     
     public func string(forKey key: String) -> String? {
         return settings[key] as? String
