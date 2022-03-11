@@ -3,7 +3,7 @@ struct NameStruct {
     var lastName: String
 }
 
-var joe = NameStruct(firstName: "Joe", lastName: "Satriani")
+var joe = NameStruct(firstName: "Joe", lastName: "Snuffy")
 var patrick = joe
 
 print("\(joe), \(patrick)")
