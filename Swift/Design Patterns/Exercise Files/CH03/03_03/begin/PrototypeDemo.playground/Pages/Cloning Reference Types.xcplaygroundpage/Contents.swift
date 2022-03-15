@@ -15,4 +15,8 @@ extension NameClass: CustomStringConvertible {
 }
 
 var steve = NameClass(firstName: "Steve", lastName: "Lee")
-print(steve.description)
+let john = steve
+print("\(steve), \(john)")
+
+john.lastName = "Werner"
+print("\(steve), \(john)")
