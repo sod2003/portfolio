@@ -42,24 +42,13 @@ stripe.receivePayment(amount: 9.99)
 
 var paymentGateways: [PaymentGateway] = [paypal, stripe]
 
-var total = 0.0
-for gateway in paymentGateways {
-    total += gateway.totalPayments
-}
-
-print(total)
-
-
-
-
-
 // third-party class, that doesn't conform to PaymentGateway
 class AmazonPayments {
     var payments = 0.0
     
     func paid(value: Double, currency: String) {
         payments += value
-        print("Paid \(currency)\(value) via Amazon Payments")
+        print("Paid \(currency) \(value) via Amazon Payments")
     }
     
     func fulfilledTransactions() -> Double {
@@ -69,5 +58,30 @@ class AmazonPayments {
 
 
 let amazonPayments = AmazonPayments()
-amazonPayments.paid(value: 120, currency: "USD")
-amazonPayments.paid(value: 74.99, currency: "USD")
+//amazonPayments.paid(value: 120, currency: "USD")
+//amazonPayments.paid(value: 74.99, currency: "USD")
+
+class AmazonPaymentsAdapter: PaymentGateway {
+    func receivePayment(amount: Double) {
+        amazonPayments.paid(value: amount, currency: "USD")
+    }
+    
+    var totalPayments: Double {
+        let total = amazonPayments.fulfilledTransactions()
+        print("Total payments received via Amazon Payments: \(total)")
+        return total
+    }
+}
+
+let amazonPaymentsAdapter = AmazonPaymentsAdapter()
+amazonPaymentsAdapter.receivePayment(amount: 120)
+amazonPaymentsAdapter.receivePayment(amount: 74.99)
+
+paymentGateways.append(amazonPaymentsAdapter)
+
+var total = 0.0
+for gateway in paymentGateways {
+    total += gateway.totalPayments
+}
+
+print(total)
