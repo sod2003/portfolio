@@ -19,7 +19,8 @@ class UserDefaultsDecorator: UserDefaults {
 
 let userDefaults = UserDefaultsDecorator()
 
-userDefaults.set(42, forKey: "the answer")
-print(userDefaults.string(forKey: "the answer") ?? "?")
+userDefaults.set(42, forKey: "answer")
+print(userDefaults.string(forKey: "answer") ?? "?")
 
 userDefaults.set(date: Date(), forKey: "now")
+print(userDefaults.date(forKey: "now") ?? "No date captured")
