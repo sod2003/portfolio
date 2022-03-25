@@ -18,7 +18,7 @@ public class NLPFacade {
         }
     }
     
-    public class func patsOfSpeech(for text: String) -> [WordLexicalClassPair] {
+    public class func partsOfSpeech(for text: String) -> [WordLexicalClassPair] {
         var result = [WordLexicalClassPair]()
         tagger.string = text
         tagger.enumerateTags(in: text.startIndex..<text.endIndex, unit: NLTokenUnit.word, scheme: NLTagScheme.lexicalClass, options: [.omitPunctuation, .omitWhitespace]) { (tag, range) -> Bool in

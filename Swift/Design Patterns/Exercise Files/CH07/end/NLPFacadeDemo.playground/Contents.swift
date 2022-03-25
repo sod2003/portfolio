@@ -2,7 +2,7 @@ let text = "The Facade is simple yet useful"
 print(text)
 
 let language = NLPFacade.dominantLanguage(for: text)
-print(language)
+print(language ?? "")
 
-let result = NLPFacade.patsOfSpeech(for: text)
+let result = NLPFacade.partsOfSpeech(for: text)
 print(result)
