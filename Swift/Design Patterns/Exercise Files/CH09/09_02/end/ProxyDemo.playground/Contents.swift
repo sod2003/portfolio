@@ -13,4 +13,4 @@ class RandomIntWithID {
 }
 
 let n = RandomIntWithID()
-print(n.uid)
+print("UID: \(n.uid)")
