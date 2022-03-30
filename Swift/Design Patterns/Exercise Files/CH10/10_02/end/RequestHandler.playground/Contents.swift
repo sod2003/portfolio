@@ -38,5 +38,5 @@ let dateHandler = Handler<Date>(next: stringHandler)
 
 let data = Data(repeating: 0, count: 10)
 dateHandler.handle(request: data)
-
+dateHandler.handle(request: Date())
 dateHandler.handle(request: 42)
