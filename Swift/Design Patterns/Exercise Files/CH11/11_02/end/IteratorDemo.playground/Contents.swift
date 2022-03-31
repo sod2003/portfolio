@@ -53,3 +53,4 @@ final class Queue<T> {
 var queue = Queue<Int>()
 queue.enqueue(1)
 queue.enqueue(2)
+queue.peek()
