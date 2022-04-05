@@ -18,7 +18,7 @@ class CoffeeMachine {
             if isCapsuleBinEmpty {
                 if isCapsuleInserted {
                     result = true
-                    print("Coffee brewed")
+                    print("Coffee brewed!")
                 }
                 else {
                     print("Insert capsule!")
@@ -36,7 +36,7 @@ class CoffeeMachine {
     
     func brew() {
         guard isReadyToBrew() else {
-            print("Can't make coffee")
+            print("Can't make coffee!")
             return
         }
         print("Coffee ready!")
