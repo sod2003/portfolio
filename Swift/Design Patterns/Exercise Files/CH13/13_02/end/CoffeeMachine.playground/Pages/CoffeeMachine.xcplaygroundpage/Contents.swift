@@ -21,7 +21,7 @@ class CoffeeMachine {
                     print("Coffee brewed!")
                 }
                 else {
-                    print("Insert capsule!")
+                    print("Insert new capsule!")
                 }
             }
             else {
