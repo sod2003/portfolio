@@ -21,19 +21,39 @@ fileprivate struct StandbyState: CoffeeMachineState {
 }
 
 fileprivate struct FillWaterTankState: CoffeeMachineState {
+    var context: CoffeeMachine
     
+    func isReadyToBrew() -> Bool {
+        guard context.isWaterTankFilled else {
+            print("Water tank is empty!")
+            context.state = StandbyState()
+            return false
+        }
+        context.state = EmptyCapsuleBinState(context: context)
+        return context.state.isReadyToBrew()
+    }
 }
 
 fileprivate struct EmptyCapsuleBinState: CoffeeMachineState {
+    var context: CoffeeMachine
     
+    func isReadyToBrew() -> Bool {
+        guard context.isCapsuleBinEmpty else {
+            print("Empty Capsule Bin!")
+            context.state = StandbyState()
+            return false
+        }
+        context.state = InsertCapsuleState(context: context)
+        return context.state.isReadyToBrew()
+    }
 }
 
 fileprivate struct InsertCapsuleState: CoffeeMachineState {
-    
+    var context: CoffeeMachine
 }
 
 fileprivate struct BrewCoffeeState: CoffeeMachineState {
-    
+    var context: CoffeeMachine
 }
 
 class CoffeeMachine {
