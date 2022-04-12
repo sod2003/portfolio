@@ -78,9 +78,9 @@ fileprivate struct BrewCoffeeState: CoffeeMachineState {
 }
 
 class CoffeeMachine {
-    private var isWaterTankFilled: Bool
-    private var isCapsuleBinEmpty: Bool
-    private var isCapsuleInserted: Bool
+    fileprivate var isWaterTankFilled: Bool
+    fileprivate var isCapsuleBinEmpty: Bool
+    fileprivate var isCapsuleInserted: Bool
     
     fileprivate var state: CoffeeMachineState = StandbyState()
 
