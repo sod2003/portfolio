@@ -50,10 +50,31 @@ fileprivate struct EmptyCapsuleBinState: CoffeeMachineState {
 
 fileprivate struct InsertCapsuleState: CoffeeMachineState {
     var context: CoffeeMachine
+    
+    func isReadyToBrew() -> Bool {
+        guard context.isCapsuleInserted else {
+            print("Coffee capsule is not inserted!")
+            context.state = StandbyState()
+            return false
+        }
+        
+        return true
+    }
 }
 
 fileprivate struct BrewCoffeeState: CoffeeMachineState {
     var context: CoffeeMachine
+    
+    func brew() {
+        context.state = FillWaterTankState(context: context)
+        guard context.state.isReadyToBrew() else {
+            print("Something went wrong!")
+            context.state = StandbyState()
+            return
+        }
+        print("Coffee ready!")
+        context.state = StandbyState()
+    }
 }
 
 class CoffeeMachine {
@@ -69,37 +90,11 @@ class CoffeeMachine {
         isCapsuleInserted = capsuleInserted
     }
     
-    private func isReadyToBrew() -> Bool {
-        var result = false
-        
-        if isWaterTankFilled {
-            if isCapsuleBinEmpty {
-                if isCapsuleInserted {
-                    result = true
-                    print("Coffee brewed")
-                }
-                else {
-                    print("Insert capsule!")
-                }
-            }
-            else {
-                print("Capsule bin full!")
-            }
-        } else {
-            print("Fill water tank!")
-        }
-        
-        return result
-    }
-    
     func brew() {
-        guard isReadyToBrew() else {
-            print("Can't make coffee")
-            return
-        }
-        print("Coffee ready!")
+        state = BrewCoffeeState(context: self)
+        state.brew()
     }
 }
 
-let coffeeMachine = CoffeeMachine(waterFilled: true, binEmpty: true, capsuleInserted: false)
+let coffeeMachine = CoffeeMachine(waterFilled: true, binEmpty: true, capsuleInserted: true)
 coffeeMachine.brew()
