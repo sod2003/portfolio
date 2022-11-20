@@ -40,14 +40,14 @@ def intro():
                 'their calling.')
     print_pause('You are approached by the city guard.')
     adventurer = {}
-    name = input("Hello, adventurer! What is your name?\n")
+    name = input("\"Hello, adventurer! What is your name?\"\n")
     adventurer['name'] = name
     adventurer['villain'] = find_villain()
     adventurer = setup_adventure(adventurer)
-    print_pause(f"Ahh, {adventurer['name']}, I've heard of you! The great "
-                f"{adventurer['villain']} hunter!")
+    print_pause(f"\"Ahh, {adventurer['name']}, I've heard of you! The great "
+                f"{adventurer['villain']} hunter!\"")
     print_pause(f"We need your help with a {adventurer['villain']} at the "
-                f" {adventurer['setting']}!")
+                f"{adventurer['setting']}!")
     print_pause('Nodding your head, you set out to help the city in need.')
     return adventurer
 
@@ -103,7 +103,7 @@ def option2(adventurer):
 
 def choice(adventurer):
     print_pause("Before you lies two paths:")
-    choice = input(f""""
+    choice = input(f"""
     1. {adventurer['option 1']}
     2. {adventurer['option 2']}
     """)
@@ -132,7 +132,7 @@ def end_game():
     play_again = input("Would you like to play again? 'Yes' or 'No'\n").lower()
     if play_again == 'yes':
         adventure_game()
-    if play_again == 'no':
+    elif play_again == 'no':
         farewell()
     else:
         print_pause("Invalid. Try Again.")
