@@ -12,4 +12,7 @@ weather = [
 ]
 
 for forecast in weather:
-    print(f"The weather for {forecast['date']} will be {forecast['state']} with a temperature of {forecast['temp']} degrees.")
+    date = forecast['date']
+    state = forecast['state']
+    temp = forecast['temp']
+    print(f"The weather for {date} will be {state} with a temperature of {temp} degrees.")
