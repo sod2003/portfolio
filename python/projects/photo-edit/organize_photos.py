@@ -5,10 +5,7 @@ def list_filenames():
     return os.listdir()
 
 def extract_filename(file):
-    first = file.find('_')
-    partial = file[first+1:]
-    second = partial.find('_')
-    return partial[:second]
+    return file.split('_')[1]
 
 def main():
     list = list_filenames()
