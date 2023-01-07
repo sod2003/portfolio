@@ -1,9 +1,12 @@
+import string
+
 rude_words = ["crap", "darn", "heck", "jerk", "idiot", "butt", "devil"]
 
 def check_line(line):
     rude_count = 0
     words = line.split(" ")    
     for word in words:
+        word = word.strip(string.punctuation).lower()
         if word in rude_words:
             rude_count += 1
             print(f"Found rude word: {word}")
