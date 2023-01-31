@@ -1,7 +1,7 @@
 package lambdas;
 
 @FunctionalInterface
-public interface BinaryOperation<Integer> {
+public interface BinaryOperation {
 
 	int apply(int a, int b);
 }
