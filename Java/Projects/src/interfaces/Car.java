@@ -1,4 +1,4 @@
-package Interface;
+package interfaces;
 
 public class Car implements Vehicle {
 	private String type;
